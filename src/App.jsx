@@ -13,7 +13,7 @@ import Support from './pages/Support';
 
 function App() {
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       <div className="flex flex-col" style={{ minHeight: '100vh' }}>
         <Header />
         <main style={{ flex: 1, marginTop: 'var(--header-height)' }}>
