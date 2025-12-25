@@ -1,0 +1,25 @@
+.language-switcher {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: var(--color-text-light);
+}
+
+.language-switcher button {
+    color: var(--color-text-light);
+    font-weight: 500;
+    padding: 2px 4px;
+    transition: color 0.2s;
+}
+
+.language-switcher button:hover,
+.language-switcher button.active {
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+.language-switcher span {
+    color: #ddd;
+    font-size: 10px;
+}

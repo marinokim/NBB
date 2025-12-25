@@ -1,0 +1,166 @@
+{
+    "header": {
+        "nav": {
+            "home": "HOME",
+            "about": "ABOUT US",
+            "business": "BUSINESS",
+            "network": "NETWORK",
+            "contact": "CONTACT"
+        }
+    },
+    "home": {
+        "visual_copy": "Based on proven industry expertise and a global network, NBB Networks is your international trading and logistics partner, creating new business value on the world stage.",
+        "section_title": "Certifications",
+        "hero": {
+            "title": "Global Trading & Logistics Partner",
+            "subtitle": "Trusted expertise. Global connection."
+        },
+        "cert": {
+            "title": "Proven Excellence",
+            "items": {
+                "ctc": "Certified Trading Company",
+                "export_tower": "Export Tower Award",
+                "motie": "MOTIE",
+                "kita": "KITA"
+            }
+        }
+    },
+    "about": {
+        "title": "About NBB Networks",
+        "intro": {
+            "headline": "Connecting global value through the synergy of<br />30 years of industrial heritage, trading, and logistics.",
+            "desc": "Based on 30 years of accumulated industrial experience, NBB Networks combines expertise in steel trading and international logistics to provide optimal business solutions to our customers."
+        },
+        "business": {
+            "trading": {
+                "title": "Trading Division",
+                "desc": "Steel and K-Product sourcing solutions based on expertise and networks."
+            },
+            "logistics": {
+                "title": "Logistics Division",
+                "desc": "Integrated logistics services based on 30 years of maritime transport know-how."
+            }
+        },
+        "values": {
+            "title": "Core Competencies",
+            "items": {
+                "partnership": "Strategic Partnership",
+                "quality": "Quality First",
+                "diversification": "Diversified Portfolio",
+                "expertise": "Industry Expertise",
+                "global": "Global Network"
+            }
+        },
+        "vision": "Your Trusted Global Partner"
+    },
+    "business": {
+        "tabs": {
+            "trading": "Trading Division",
+            "logistics": "Logistics Division"
+        },
+        "trading": {
+            "title": "Trading Division",
+            "desc": "Global Trading Solutions Driven by Expertise and Networks. Specializes in global commerce centered on steel products from Korea and third-country markets.",
+            "steel": {
+                "title": "Steel Business",
+                "items": [
+                    "HRC / HRP",
+                    "CR / GI / GL / ZAM / Pre-painted",
+                    "Aluminized Steel / Si Steel",
+                    "STS (Stainless Steel)",
+                    "Long Product (Wire Rod, Rebar)"
+                ]
+            },
+            "kproduct": {
+                "title": "K-Product Expansion",
+                "items": [
+                    {
+                        "name": "Ginseng Products",
+                        "desc": "Representative Korean health food"
+                    },
+                    {
+                        "name": "Agricultural Products",
+                        "desc": "Premium produce including Seolhyang Strawberries"
+                    },
+                    {
+                        "name": "Used Cars",
+                        "desc": "Export of quality-verified Korean used cars"
+                    }
+                ]
+            }
+        },
+        "logistics": {
+            "title": "Logistics Division",
+            "desc": "Integrated Logistics Services Built on 30 Years of Maritime Expertise. Providing customized shipping solutions for safe and fast transportation.",
+            "flow_title": "Logistics Process",
+            "table": {
+                "title": "Service Details",
+                "headers": [
+                    "Service",
+                    "Description"
+                ],
+                "rows": [
+                    {
+                        "svc": "FCL",
+                        "desc": "Full Container Load - Optimized for bulk shipments"
+                    },
+                    {
+                        "svc": "LCL",
+                        "desc": "Less than Container Load - Consolidated shipping for smaller cargo"
+                    },
+                    {
+                        "svc": "Special Cargo",
+                        "desc": "Project cargo, Reefer, DG cargo handling"
+                    },
+                    {
+                        "svc": "Door to Door",
+                        "desc": "One-Stop service from pickup, customs to final delivery"
+                    },
+                    {
+                        "svc": "Sea & Air",
+                        "desc": "Cost-effective combined transport utilizing Sea & Air"
+                    },
+                    {
+                        "svc": "One-Stop SVC",
+                        "desc": "All-in-one handling of customs, storage, and trucking"
+                    }
+                ]
+            }
+        }
+    },
+    "network": {
+        "title": "Global Network",
+        "desc": "NBB Networks' global presence connected with key hubs around the world.",
+        "regions": {
+            "asia": "Asia (China, Japan, Taiwan)",
+            "sea": "S.E. Asia (Vietnam, Thailand, Philippines, Indonesia)",
+            "me": "Middle East (UAE, Qatar, Saudi Arabia, Turkey)",
+            "americas": "Americas (USA, Canada, Mexico, Chile, Dominican Republic)",
+            "europe": "Europe (Germany, Italy, Netherlands, Spain, Portugal)",
+            "others": "Others (South Africa, India)",
+            "india": "India",
+            "sa": "South Africa"
+        },
+        "partners": {
+            "title": "Our Partners",
+            "trading": "Trading Partners",
+            "logistics": "Logistics Partners"
+        }
+    },
+    "contact": {
+        "title": "Contact Us",
+        "address": {
+            "label": "Address",
+            "value": "8Fl, Donghyun Bldg., 11-16 Teheran-ro 77-gil, Gangnam-gu, Seoul, 06159, Republic of Korea"
+        },
+        "email": {
+            "trading": "Trading Inquiry",
+            "logistics": "Logistics Inquiry"
+        }
+    },
+    "footer": {
+        "slogan": "Your Trusted Global Partner",
+        "address": "8Fl, Donghyun Bldg., 11-16 Teheran-ro 77-gil, Gangnam-gu, Seoul, 06159, Republic of Korea",
+        "copyright": "© {year} NBB Networks. All rights reserved."
+    }
+}

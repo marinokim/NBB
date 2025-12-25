@@ -1,0 +1,126 @@
+.about-page {
+    padding-top: var(--header-height);
+}
+
+.about-intro {
+    padding: 80px 0;
+    background-color: var(--color-bg-light);
+    text-align: center;
+}
+
+.about-intro h1 {
+    font-size: 36px;
+    margin-bottom: var(--spacing-lg);
+    color: var(--color-primary);
+}
+
+.about-headline {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: var(--spacing-md);
+}
+
+.about-desc {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 16px;
+    color: var(--color-text-light);
+    line-height: 1.8;
+}
+
+/* Business Division - 2 Column */
+.about-business {
+    padding: 80px 0;
+}
+
+.business-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+}
+
+.business-card {
+    padding: 40px;
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    transition: box-shadow var(--transition-normal);
+}
+
+.business-card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.business-card h3 {
+    font-size: 24px;
+    margin-bottom: var(--spacing-md);
+    color: var(--color-primary);
+}
+
+.business-card p {
+    color: var(--color-text-light);
+}
+
+/* Core Competencies */
+.about-values {
+    padding: 80px 0;
+    background-color: #f0f4f8;
+    /* Slightly different bg */
+    text-align: center;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.value-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.value-icon-wrapper {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    color: var(--color-secondary);
+}
+
+.value-text {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.about-vision {
+    padding: 60px 0;
+    text-align: center;
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+
+.about-vision h2 {
+    font-size: 32px;
+    font-family: 'Times New Roman', serif;
+    /* Or keep sans-serif */
+    letter-spacing: 1px;
+}
+
+@media (min-width: 768px) {
+    .business-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .values-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}

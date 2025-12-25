@@ -1,0 +1,44 @@
+:root {
+  /* Colors */
+  --color-primary: #004080; /* Deep Blue - Trustworthy */
+  --color-secondary: #007bff; /* Bright Blue - Active */
+  --color-accent: #ffb400; /* Gold/Amber - Highlight */
+  --color-text-dark: #333333;
+  --color-text-light: #666666;
+  --color-white: #ffffff;
+  --color-bg-light: #f8f9fa;
+  --color-border: #e1e1e1;
+
+  /* Typography */
+  --font-family-base: 'Noto Sans KR', 'Noto Sans', sans-serif;
+  --font-size-base: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 24px;
+  --font-size-xxl: 36px;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 48px;
+  --spacing-xxl: 80px;
+
+  /* Layout */
+  --container-width: 1200px;
+  --header-height: 80px;
+  
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+}
+
+[data-theme='dark'] {
+  --color-text-dark: #f1f1f1;
+  --color-text-light: #cccccc;
+  --color-bg-light: #121212;
+  --color-white: #1e1e1e;
+  --color-border: #333333;
+}

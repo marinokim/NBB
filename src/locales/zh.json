@@ -1,0 +1,166 @@
+{
+    "header": {
+        "nav": {
+            "home": "首页",
+            "about": "关于我们",
+            "business": "业务领域",
+            "network": "全球网络",
+            "contact": "联系我们"
+        }
+    },
+    "home": {
+        "visual_copy": "基于经过验证的行业与全球网络，NBB Networks 是您在国际际贸易与物流领域的合作伙伴，在世界舞台上创造新的商业价值。",
+        "section_title": "主要认证现状",
+        "hero": {
+            "title": "全球贸易与物流合作伙伴",
+            "subtitle": "值得信赖的专业知识。全球连接。"
+        },
+        "cert": {
+            "title": "卓越认证",
+            "items": {
+                "ctc": "专业贸易公司 (CTC)",
+                "export_tower": "出口之塔",
+                "motie": "产业通商资源部",
+                "kita": "韩国贸易协会"
+            }
+        }
+    },
+    "about": {
+        "title": "关于 NBB Networks",
+        "intro": {
+            "headline": "通过30年的产业遗产、贸易与物流的协同效应<br />连接全球价值。",
+            "desc": "NBB Networks 基于过去30年积累的产业经验，结合钢铁贸易与国际物流的专业性，为客户提供最佳的商业解决方案。"
+        },
+        "business": {
+            "trading": {
+                "title": "贸易部门",
+                "desc": "基于专业性和网络的钢铁及韩国产品采购解决方案。"
+            },
+            "logistics": {
+                "title": "物流部门",
+                "desc": "基于30年海运技术的综合物流服务（货运代理，供应链）。"
+            }
+        },
+        "values": {
+            "title": "核心竞争力",
+            "items": {
+                "partnership": "战略合作伙伴关系",
+                "quality": "质量第一",
+                "diversification": "投资组合多样化",
+                "expertise": "行业专业知识",
+                "global": "全球网络"
+            }
+        },
+        "vision": "Your Trusted Global Partner"
+    },
+    "business": {
+        "tabs": {
+            "trading": "贸易部门",
+            "logistics": "物流部门"
+        },
+        "trading": {
+            "title": "贸易部门",
+            "desc": "以韩国及三国间的钢铁产品为中心，提供基于信任和专业的解决方案。",
+            "steel": {
+                "title": "钢铁业务",
+                "items": [
+                    "HRC / HRP",
+                    "CR / GI / GL / ZAM / Pre-painted",
+                    "Aluminized Steel / Si Steel",
+                    "STS (Stainless Steel)",
+                    "Long Product (Wire Rod, Rebar)"
+                ]
+            },
+            "kproduct": {
+                "title": "K-Product 扩展",
+                "items": [
+                    {
+                        "name": "红参产品",
+                        "desc": "代表性的韩国健康食品"
+                    },
+                    {
+                        "name": "农产品",
+                        "desc": "雪香草莓等优质农产品"
+                    },
+                    {
+                        "name": "二手车",
+                        "desc": "经过质量验证的韩国二手车出口"
+                    }
+                ]
+            }
+        },
+        "logistics": {
+            "title": "物流部门",
+            "desc": "安全、快速、具有成本竞争力的综合物流服务。",
+            "flow_title": "物流流程",
+            "table": {
+                "title": "服务详情",
+                "headers": [
+                    "服务",
+                    "说明"
+                ],
+                "rows": [
+                    {
+                        "svc": "FCL",
+                        "desc": "整箱货运 - 针对大宗货物的优化集装箱运输"
+                    },
+                    {
+                        "svc": "LCL",
+                        "desc": "拼箱货运 - 针对少量货物的拼箱服务"
+                    },
+                    {
+                        "svc": "特殊货物",
+                        "desc": "项目货物、冷冻/冷藏、危险品等特殊货物运输"
+                    },
+                    {
+                        "svc": "门到门",
+                        "desc": "从提货到通关、最终配送的一站式服务"
+                    },
+                    {
+                        "svc": "海空联运",
+                        "desc": "结合海运与空运优势的合理复合运输"
+                    },
+                    {
+                        "svc": "一站式服务",
+                        "desc": "进出口相关通关、仓储、运输等全套代理服务"
+                    }
+                ]
+            }
+        }
+    },
+    "network": {
+        "title": "Global Network",
+        "desc": "NBB Networks 与世界主要枢纽连接的全球现状。",
+        "regions": {
+            "asia": "亚洲 (中国, 日本, 台湾)",
+            "sea": "东南亚 (越南, 泰国, 菲律宾, 印度尼西亚)",
+            "me": "中东 (阿联酋, 卡塔尔, 沙特阿拉伯, 土耳其)",
+            "americas": "美洲 (美国, 加拿大, 墨西哥, 智利, 多米尼加共和国)",
+            "europe": "欧洲 (德国, 意大利, 荷兰, 西班牙, 葡萄牙)",
+            "others": "其他 (南非, 印度)",
+            "india": "印度",
+            "sa": "南非"
+        },
+        "partners": {
+            "title": "Our Partners",
+            "trading": "贸易合作伙伴",
+            "logistics": "物流合作伙伴"
+        }
+    },
+    "contact": {
+        "title": "Contact Us",
+        "address": {
+            "label": "地址",
+            "value": "首尔特别市江南区德黑兰路77街11-16，东贤大厦8楼"
+        },
+        "email": {
+            "trading": "贸易咨询",
+            "logistics": "物流咨询"
+        }
+    },
+    "footer": {
+        "slogan": "Your Trusted Global Partner",
+        "address": "8Fl, Donghyun Bldg., 11-16 Teheran-ro 77-gil, Gangnam-gu, Seoul, 06159, Republic of Korea",
+        "copyright": "© {year} NBB Networks. All rights reserved."
+    }
+}
