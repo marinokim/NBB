@@ -1,0 +1,291 @@
+{
+    "header": {
+        "nav": {
+            "home": "HOME",
+            "about": "ABOUT US",
+            "business": "BUSINESS",
+            "network": "NETWORK",
+            "contact": "CONTACT"
+        }
+    },
+    "home": {
+        "visual_copy": "Based on proven industry expertise and a global network, NBB Networks is your international trading and logistics partner, creating new business value on the world stage.",
+        "section_title": "Certifications",
+        "hero": {
+            "slides": {
+                "trading": {
+                    "title": "Global Trading Partner",
+                    "subtitle": "Connecting markets, delivering value across borders."
+                },
+                "logistics": {
+                    "title": "Advanced Logistics",
+                    "subtitle": "Seamless supply chain solutions for your business."
+                },
+                "main": {
+                    "title": "NBB Networks",
+                    "subtitle": "Your trusted partner in global commerce."
+                }
+            }
+        },
+        "cert": {
+            "title": "Proven Excellence",
+            "items": {
+                "ctc": "Certified Trading Company",
+                "export_tower": "Export Tower Award",
+                "motie": "MOTIE",
+                "kita": "KITA"
+            }
+        },
+        "about_summary": {
+            "since": "Since 2005",
+            "title": "Bridging Global Markets with Trust",
+            "desc": "NBB Networks has been a pioneer in connecting international markets through strategic trading and efficient logistics. Our mission is to simplify global commerce for our partners.",
+            "btn": "Our Story",
+            "stats": {
+                "exp": "Years Experience",
+                "partners": "Global Partners",
+                "volume": "Trade Volume"
+            }
+        },
+        "business_summary": {
+            "title": "Our Expertise",
+            "desc": "Comprehensive solutions for the modern supply chain.",
+            "trading": {
+                "title": "Global Trading",
+                "desc": "Sourcing and distributing premium steel products (\"NBB Steel\") and high-quality Korean Ginseng (\"Ginseng Khan\")."
+            },
+            "logistics": {
+                "title": "Logistics",
+                "desc": "End-to-end logistics monitoring with real-time tracking from port to warehouse."
+            },
+            "network": {
+                "title": "Network",
+                "desc": "A vast network of reliable partners ensuring smooth operations across Asia and beyond."
+            },
+            "btn": "Learn More"
+        }
+    },
+    "about": {
+        "title": "About NBB Networks",
+        "subtitle": "Connecting the World, Creating Value",
+        "intro": {
+            "headline": "Connecting Global Value through the Synergy of <br />30 Years of Industrial Heritage, Trading, and Logistics.",
+            "desc_1": "NBB Networks is a specialized international trading and logistics company established in 2017. Built on over 30 years of accumulated leadership and expertise in steel trading and maritime transport, we have established long-term business trust based on a strong global network and operational excellence.",
+            "desc_2": "We strategically combine rich industrial experience with solid business networks to drive sustainable growth. Through organic collaboration between our core Trading and Logistics divisions, we deliver differentiated execution that optimizes the entire business process for our clients beyond simple product supply."
+        },
+        "business": {
+            "title": "Business Division",
+            "trading": {
+                "title": "Trading Division",
+                "headline": "Global trading solutions based on expertise and networks",
+                "items": [
+                    {
+                        "title": "Steel Business",
+                        "desc": "Supplying high-quality steel products between Korea and third countries based on strong partnerships with major steel companies"
+                    },
+                    {
+                        "title": "K-Product Expansion",
+                        "desc": "Expanding insight in the steel sector to supply Korea's competitive and excellent products to the global market"
+                    },
+                    {
+                        "title": "Customized Sourcing",
+                        "desc": "Diversifying product portfolios to meet special industrial demands and providing customized procurement solutions"
+                    }
+                ]
+            },
+            "logistics": {
+                "title": "Logistics Division",
+                "headline": "Integrated logistics services based on 30 years of maritime transport know-how",
+                "items": [
+                    {
+                        "title": "Global Forwarding",
+                        "desc": "Operating a fast and accurate global logistics network based on rich maritime transport experience"
+                    },
+                    {
+                        "title": "Optimized Supply Chain",
+                        "desc": "Customized transport solutions that maximize speed and efficiency to optimize complex international logistics processes"
+                    },
+                    {
+                        "title": "Compliance & Safety",
+                        "desc": "Creating safe and reliable logistics value through strict compliance management that meets international standards"
+                    }
+                ]
+            }
+        },
+        "values": {
+            "title": "Core Competencies",
+            "items": {
+                "partnership": {
+                    "title": "Strategic Partnership",
+                    "desc": "Building trust-based cooperative relationships that create long-term value"
+                },
+                "quality": {
+                    "title": "Quality First",
+                    "desc": "Thorough quality assurance and verification system complying with international standards"
+                },
+                "diversification": {
+                    "title": "Portfolio Diversification",
+                    "desc": "Expanding business areas beyond steel to special industries and excellent Korean products"
+                },
+                "expertise": {
+                    "title": "Advanced Solution Capability",
+                    "desc": "Strengthening customer-customized support and professional processes"
+                },
+                "customer": {
+                    "title": "Customer-Centric Management",
+                    "desc": "Flexible and proactive response prioritizing customer success"
+                }
+            }
+        },
+        "vision": {
+            "title": "Your Trusted Global Partner",
+            "desc": "Even in the rapidly changing global market environment, NBB Networks will continuously prove new business achievements as the most trusted global partner in international trading and logistics based on proven industrial experience and specialized capabilities."
+        },
+        "mission": "Connecting Global Value through the Synergy of Trading and Logistics.",
+        "values_summary": "Strategic Partnership, Quality Assurance, Portfolio Diversification, Advanced Solutions, Customer-Centric Management"
+    },
+    "business": {
+        "title": "Our Business",
+        "subtitle": "Strategic Trading & Advanced Logistics",
+        "tabs": {
+            "trading": "Trading Division",
+            "logistics": "Logistics Division"
+        },
+        "trading": {
+            "title": "Trading Division",
+            "back_to_business": "Back to Business",
+            "desc": "Global Trading Solutions Driven by Expertise and Networks. Specializes in global commerce centered on steel products from Korea and third-country markets.",
+            "intro": {
+                "main": "Our Trading Division specializes in global commerce centered on steel products from Korea and third-country markets, delivering competitive solutions built on a foundation of trust and expertise. Leveraging decades of deep-rooted know-how in the steel industry, we are strategically expanding our global footprint by supplying Korea's most competitive and premium products to the world.",
+                "sub": "Beyond the mere movement of goods, we uphold the core values of 'Sustainable Partnership' and 'Strict Quality First,' striving for innovation and mutual growth as a valuable partner connecting global supply chains."
+            },
+            "philosophy": {
+                "partnership": "Sustainable Partnership",
+                "quality": "Strict Quality First"
+            },
+            "steel": {
+                "title": "Steel Business",
+                "page_desc": "High-quality steel products for construction and manufacturing.",
+                "item_desc": "Premium quality materials verified for international standards.",
+                "items": [
+                    "HRC / HRP (Hot Rolled Coil / Plate)",
+                    "CR / GI / GL / ZAM / Pre-painted",
+                    "Aluminized Steel / Si Steel",
+                    "STS (Stainless Steel)",
+                    "Long Product (Wire Rod, Rebar)"
+                ]
+            },
+            "kproduct": {
+                "title": "K-Product Expansion",
+                "page_desc": "Premium Korean Ginseng and health supplements.",
+                "default_desc": "Exporting the finest Korean Red Ginseng.",
+                "items": [
+                    {
+                        "name": "Ginseng Products",
+                        "desc": "Representative Korean health food"
+                    },
+                    {
+                        "name": "Agricultural Products",
+                        "desc": "Premium produce including Seolhyang Strawberries"
+                    },
+                    {
+                        "name": "Used Cars",
+                        "desc": "Export of quality-verified Korean used cars"
+                    }
+                ]
+            }
+        },
+        "logistics": {
+            "title": "Logistics Division",
+            "desc": "Integrated Logistics Services Built on 30 Years of Maritime Expertise. Providing customized shipping solutions for safe and fast transportation.",
+            "intro": "We provide customized logistics solutions for safe and swift transportation, along with high-quality integrated logistics services equipped with cost competitiveness. Experience optimal services across all areas of logistics, including sea freight, air freight, inland transport, multimodal transport, warehousing, and customs clearance.",
+            "flow_title": "Logistics Process",
+            "process": {
+                "shipper": "Shipper",
+                "inland": "Local Inland",
+                "cfs": "CFS",
+                "air": "Air Freight",
+                "ocean": "Ocean Freight",
+                "rail": "Rail Freight",
+                "consignee": "Consignee"
+            },
+            "table": {
+                "title": "Service Details",
+                "headers": [
+                    "Service",
+                    "Description"
+                ],
+                "rows": [
+                    {
+                        "svc": "FCL",
+                        "desc": "Full Container Load - Optimized for bulk shipments"
+                    },
+                    {
+                        "svc": "LCL",
+                        "desc": "Less than Container Load - Consolidated shipping for smaller cargo"
+                    },
+                    {
+                        "svc": "Special Cargo",
+                        "desc": "Project cargo, Reefer, DG cargo handling"
+                    },
+                    {
+                        "svc": "Door to Door",
+                        "desc": "One-Stop service from pickup, customs to final delivery"
+                    },
+                    {
+                        "svc": "Sea & Air",
+                        "desc": "Cost-effective combined transport utilizing Sea & Air"
+                    },
+                    {
+                        "svc": "One-Stop SVC",
+                        "desc": "All-in-one handling of customs, storage, and trucking"
+                    }
+                ]
+            }
+        }
+    },
+    "network": {
+        "title": "Global Network",
+        "desc": "NBB Networks' global presence connected with key hubs around the world.",
+        "regions": {
+            "asia": "Asia (China, Japan, Taiwan)",
+            "sea": "S.E. Asia (Vietnam, Thailand, Philippines, Indonesia)",
+            "me": "Middle East (UAE, Qatar, Saudi Arabia, Turkey)",
+            "namerica": "North America (USA, Canada, Mexico, Dominican Republic)",
+            "samerica": "South America (Chile)",
+            "europe": "Europe (Germany, Italy, Netherlands, Spain, Portugal)",
+            "others": "Others (South Africa, India)",
+            "india": "India",
+            "sa": "South Africa"
+        },
+        "partners": {
+            "title": "Our Partners",
+            "trading": "Trading Partners",
+            "logistics": "Logistics Partners"
+        }
+    },
+    "contact": {
+        "title": "Contact Us",
+        "subtitle": "Get in touch with our global team",
+        "location": "Location",
+        "address": {
+            "label": "Address",
+            "value": "8Fl, Donghyun Bldg., 11-16 Teheran-ro 77-gil, Gangnam-gu, Seoul, 06159, Republic of Korea"
+        },
+        "email": {
+            "trading": "Trading Inquiry",
+            "logistics": "Logistics Inquiry"
+        }
+    },
+    "footer": {
+        "slogan": "Your Trusted Global Partner",
+        "address": "8Fl, Donghyun Bldg., 11-16 Teheran-ro 77-gil, Gangnam-gu, Seoul, 06159, Republic of Korea",
+        "copyright": "© {year} NBB Networks. All rights reserved.",
+        "company": "Company",
+        "legal": "Legal",
+        "links": {
+            "privacy": "Privacy Policy",
+            "terms": "Terms of Service"
+        }
+    }
+}

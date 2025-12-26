@@ -1,0 +1,212 @@
+.page-network-v2 {
+    min-height: 100vh;
+    padding-bottom: var(--spacing-16);
+}
+
+.network-header {
+    background: linear-gradient(rgba(0, 43, 92, 0.9), rgba(0, 43, 92, 0.7)), url('../assets/images/hero/hero_port_operations.png');
+    /* Removed redundant background props */
+}
+
+/* Map Section */
+.map-section {
+    background-color: var(--color-bg-light);
+}
+
+.map-container-v2 {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto var(--spacing-8);
+    aspect-ratio: 16/9;
+    background-color: var(--color-white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    overflow: hidden;
+    border: 1px solid var(--color-border);
+}
+
+.world-map-bg {
+    width: 100%;
+    height: 100%;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/ec/World_map_blank_without_borders.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.15;
+    /* Subtle background */
+}
+
+/* Dots & Lines */
+.network-lines-svg-v2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.network-line-v2 {
+    fill: none;
+    stroke: var(--color-accent);
+    stroke-width: 2;
+    stroke-dasharray: 5, 5;
+    opacity: 0.4;
+    animation: flow-line 60s linear infinite;
+}
+
+@keyframes flow-line {
+    to {
+        stroke-dashoffset: -1000;
+    }
+}
+
+.map-dot-v2 {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    transform: translate(-50%, -50%);
+    /* Center dot on coordinate */
+    transition: all 0.3s ease;
+    box-shadow: 0 0 0 4px rgba(0, 43, 92, 0.1);
+}
+
+.map-dot-v2:hover,
+.map-dot-v2.active {
+    background-color: var(--color-accent);
+    transform: translate(-50%, -50%) scale(1.3);
+    box-shadow: 0 0 0 8px rgba(8, 142, 164, 0.2);
+}
+
+.map-dot-v2.hq {
+    background-color: #dc3545;
+    /* Red for HQ */
+    z-index: 15;
+}
+
+.map-dot-v2.hq::after {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    right: -6px;
+    bottom: -6px;
+    border-radius: 50%;
+    border: 2px solid #dc3545;
+    animation: pulse-hq 2s infinite;
+}
+
+@keyframes pulse-hq {
+    0% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+.map-tooltip-v2 {
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 43, 92, 0.9);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.map-dot-v2:hover .map-tooltip-v2,
+.map-dot-v2.active .map-tooltip-v2 {
+    opacity: 1;
+}
+
+/* Region Filter */
+.region-filter-v2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--spacing-3);
+    margin-top: var(--spacing-8);
+}
+
+.region-btn-v2 {
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    padding: var(--spacing-2) var(--spacing-4);
+    border-radius: 20px;
+    font-size: var(--font-size-sm);
+    cursor: pointer;
+    transition: all 0.2s;
+    color: var(--color-text-secondary);
+}
+
+.region-btn-v2:hover,
+.region-btn-v2.active {
+    background: var(--color-primary);
+    color: white;
+    border-color: var(--color-primary);
+}
+
+/* Partners Section */
+.partners-section-v2 {
+    background-color: var(--color-bg-base);
+    padding: var(--spacing-20) 0;
+    margin-top: var(--spacing-16);
+    /* Added spacing to separate from map section */
+}
+
+/* partner-subtitle removed, using global .v2-section-title */
+
+.partners-grid-v2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: var(--spacing-4);
+    margin-bottom: var(--spacing-12);
+}
+
+.partner-card-v2 {
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.partner-card-v2:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--color-accent);
+}
+
+.partner-card-v2 img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    filter: grayscale(100%);
+    opacity: 0.7;
+    transition: all 0.3s;
+}
+
+.partner-card-v2:hover img {
+    filter: grayscale(0%);
+    opacity: 1;
+}

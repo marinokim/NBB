@@ -1,0 +1,639 @@
+/* Page Header now uses global .page-header in main.css */
+/* Specific background images can remain here or be moved if needed, but BusinessV2.jsx doesn't add a specific class for background image only page-header business-header? */
+/* Actually BusinessV2.jsx uses .page-header.business-header */
+.business-header {
+    background-image: linear-gradient(rgba(0, 43, 92, 0.8), rgba(0, 43, 92, 0.9)), url('../assets/images/hero/hero_port_operations.png');
+}
+
+/* V2 Tabs - Premium Style */
+.business-tabs-v2 {
+    background: var(--color-white);
+    border-bottom: 1px solid var(--color-border);
+    position: sticky;
+    top: var(--header-height);
+    z-index: 100;
+    box-shadow: var(--shadow-sm);
+}
+
+.business-tabs-v2 .container {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-8);
+}
+
+.tab-btn-v2 {
+    background: none;
+    border: none;
+    font-size: var(--font-size-lg);
+    font-weight: 500;
+    color: var(--color-text-secondary);
+    padding: var(--spacing-4) var(--spacing-8);
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.tab-btn-v2:hover {
+    color: var(--color-primary);
+}
+
+.tab-btn-v2.active {
+    color: var(--color-primary);
+    border-bottom-color: var(--color-primary);
+    font-weight: 700;
+}
+
+.v2-content-wrapper {
+    min-height: 60vh;
+    padding: var(--spacing-16) 0;
+}
+
+/* Philosophy Cards V2 - Refined */
+.philosophy-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-8);
+    margin-bottom: var(--spacing-16);
+}
+
+.philosophy-card-v2 {
+    background: var(--color-white);
+    padding: var(--spacing-8);
+    /* Reduced from 10 to give more width */
+    word-break: keep-all;
+    /* Prevent awkward word breaks */
+    border-radius: var(--radius-lg);
+    text-align: center;
+    border: 1px solid var(--color-border);
+    box-shadow: var(--shadow-md);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.philosophy-card-v2:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--color-primary-light);
+}
+
+.philosophy-card-v2 .ph-icon {
+    width: 72px;
+    height: 72px;
+    background: var(--color-bg-subtle);
+    border-radius: 50%;
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto var(--spacing-6);
+}
+
+.philosophy-card-v2 h4 {
+    font-size: var(--font-size-2xl);
+    font-weight: 800;
+    /* Extra Bold for emphasis */
+    margin-bottom: var(--spacing-4);
+    color: var(--color-primary);
+}
+
+/* Trading Grid - Refined */
+.trading-grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-16);
+}
+
+.trading-item-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.trading-item-link:hover .trading-item {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+}
+
+.trading-item-link:hover .read-more-btn {
+    color: var(--color-action-hover);
+    gap: 8px;
+}
+
+.trading-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-12);
+    align-items: center;
+    background: var(--color-white);
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: all 0.3s ease;
+    border: 1px solid var(--color-border);
+}
+
+.trading-image {
+    height: 400px;
+    overflow: hidden;
+}
+
+.trading-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.trading-item:hover .trading-image img {
+    transform: scale(1.05);
+}
+
+.trading-info {
+    padding: var(--spacing-10);
+}
+
+.trading-info h3 {
+    font-size: var(--font-size-3xl);
+    /* Large Title */
+    font-weight: 800;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-6);
+    letter-spacing: -0.5px;
+}
+
+.feature-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: var(--spacing-8);
+}
+
+.feature-list li {
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: var(--spacing-2);
+    color: var(--color-text-secondary);
+}
+
+.feature-list li::before {
+    content: "•";
+    color: var(--color-accent);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.k-product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-4);
+    margin-bottom: var(--spacing-8);
+}
+
+.k-mini-card {
+    background: var(--color-bg-subtle);
+    padding: var(--spacing-4);
+    border-radius: var(--radius-md);
+}
+
+.k-mini-card strong {
+    display: block;
+    color: var(--color-primary);
+    margin-bottom: 4px;
+    font-size: var(--font-size-md);
+}
+
+.read-more-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    color: var(--color-action);
+    font-weight: 600;
+    margin-top: var(--spacing-4);
+    transition: all 0.2s;
+}
+
+/* Logistics Flow V2 - Refined */
+.logistics-intro {
+    max-width: 800px;
+    margin: 0 auto var(--spacing-16);
+    color: var(--color-text-primary);
+    font-size: var(--font-size-lg);
+    line-height: 1.8;
+    word-break: keep-all;
+    /* Prevents splitting Korean words */
+    text-align: center;
+}
+
+.logistics-flow-v2 {
+    background: var(--color-white);
+    padding: var(--spacing-12);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-lg);
+    margin-bottom: var(--spacing-16);
+    border: 1px solid var(--color-border);
+    text-align: center;
+}
+
+.flow-title {
+    font-size: var(--font-size-2xl);
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-12);
+    font-weight: 700;
+}
+
+.process-diagram-v2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-6);
+    flex-wrap: wrap;
+}
+
+.flow-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-4);
+    width: 120px;
+}
+
+.flow-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: var(--color-white);
+    border: 2px solid var(--color-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-primary);
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+}
+
+.flow-step:hover .flow-icon {
+    border-color: var(--color-primary);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.flow-icon.success {
+    background: var(--color-primary);
+    color: white;
+    border-color: var(--color-primary);
+}
+
+.flow-step span {
+    font-weight: 600;
+    color: var(--color-text-primary);
+}
+
+.flow-arrow {
+    color: var(--color-border);
+    width: 32px;
+    height: 32px;
+}
+
+.flow-complex {
+    background: var(--color-bg-subtle);
+    padding: var(--spacing-6) var(--spacing-8);
+    border-radius: var(--radius-lg);
+    border: 1px dashed var(--color-border);
+}
+
+/* Ported V1 Logistics Styles */
+.p-arrow {
+    display: flex;
+    align-items: center;
+    color: #cbd5e1;
+    animation: pulseFlow 1.5s infinite ease-in-out;
+}
+
+@keyframes pulseFlow {
+
+    0%,
+    100% {
+        opacity: 0.4;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+        color: var(--color-primary);
+    }
+}
+
+@keyframes dashFlow {
+    0% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: -100% 50%;
+    }
+}
+
+/* Branch Arrows (Visual Only) */
+.p-branch-arrows {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 180px;
+    /* Adjusted to match middle column height */
+    width: 40px;
+    position: relative;
+}
+
+.p-branch-arrows .p-arrow-up,
+.p-branch-arrows .p-arrow-down {
+    position: absolute;
+    width: 24px;
+    height: 3px;
+    background-color: #cbd5e1;
+    right: 0;
+    border-radius: 2px;
+}
+
+/* Gradients for flow animation */
+.p-branch-arrows .p-arrow-up,
+.p-branch-arrows .p-arrow-mid,
+.p-branch-arrows .p-arrow-down {
+    background: linear-gradient(90deg, #cbd5e1 30%, var(--color-primary) 50%, #cbd5e1 70%);
+    background-size: 200% 100%;
+    animation: dashFlow 1.5s infinite linear;
+}
+
+.p-branch-arrows .p-arrow-up {
+    top: 30px;
+    transform: rotate(-30deg);
+    transform-origin: right center;
+}
+
+.p-branch-arrows .p-arrow-down {
+    bottom: 30px;
+    transform: rotate(30deg);
+    transform-origin: right center;
+}
+
+.p-branch-arrows .p-arrow-mid {
+    position: absolute;
+    width: 24px;
+    height: 3px;
+    background-color: #cbd5e1;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.rotate-180 {
+    transform: rotate(180deg);
+}
+
+/* Middle Branching Section */
+.p-middle-col {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 0 10px;
+}
+
+.p-mid-step {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.p-label-sm {
+    font-size: 13px;
+    color: var(--color-text-secondary);
+    font-weight: 600;
+    width: 60px;
+    text-align: left;
+}
+
+/* Icon overrides for V1 style */
+.flow-step .flow-icon,
+.p-mid-step .flow-icon {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s;
+}
+
+.p-mid-step .flow-icon {
+    width: 40px;
+    height: 40px;
+    border-color: var(--color-secondary-light);
+    color: var(--color-secondary);
+}
+
+/* Pulse animation for icons */
+@keyframes stepPulse {
+
+    0%,
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 43, 92, 0);
+        border-color: var(--color-primary);
+    }
+
+    50% {
+        box-shadow: 0 0 0 8px rgba(0, 43, 92, 0.1);
+        border-color: var(--color-accent);
+        transform: scale(1.05);
+    }
+}
+
+.flow-step .flow-icon,
+.p-mid-step .flow-icon {
+    animation: stepPulse 2s infinite;
+}
+
+/* Stagger Animations */
+.flow-step:nth-child(1) .flow-icon {
+    animation-delay: 0s;
+}
+
+/* Shipper */
+.flow-step:nth-child(3) .flow-icon {
+    animation-delay: 0.4s;
+}
+
+/* Inland */
+.flow-step:nth-child(5) .flow-icon {
+    animation-delay: 0.8s;
+}
+
+/* CFS */
+
+.p-mid-step:nth-child(1) .flow-icon {
+    animation-delay: 1.2s;
+}
+
+/* Air */
+.p-mid-step:nth-child(2) .flow-icon {
+    animation-delay: 1.3s;
+}
+
+/* Ocean */
+.p-mid-step:nth-child(3) .flow-icon {
+    animation-delay: 1.4s;
+}
+
+/* Rail */
+
+.flow-step:nth-child(9) .flow-icon {
+    animation-delay: 1.8s;
+}
+
+/* CFS */
+.flow-step:nth-child(11) .flow-icon {
+    animation-delay: 2.2s;
+}
+
+/* Consignee */
+
+/* Services Table V2 - Premium Card Style */
+.services-table-wrapper {
+    background: var(--color-white);
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    box-shadow: 0 10px 30px -10px rgba(0, 43, 92, 0.15);
+    border: 1px solid var(--color-border);
+    margin-top: var(--spacing-16);
+}
+
+.services-table-wrapper h3 {
+    padding: var(--spacing-8);
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+    margin: 0;
+    font-size: var(--font-size-2xl);
+    color: white;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+
+.v2-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.v2-table th {
+    background: var(--color-bg-subtle);
+    color: var(--color-text-secondary);
+    padding: var(--spacing-6);
+    text-align: left;
+    font-weight: 700;
+    font-size: var(--font-size-sm);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid var(--color-border);
+}
+
+.v2-table td {
+    padding: var(--spacing-6);
+    border-bottom: 1px solid var(--color-border);
+    color: var(--color-text-secondary);
+    vertical-align: middle;
+    transition: background-color 0.2s;
+}
+
+.v2-table tr:hover td {
+    background-color: #f8fafc;
+    color: var(--color-primary);
+}
+
+.v2-table tr:last-child td {
+    border-bottom: none;
+}
+
+.svc-name-v2 {
+    font-weight: 700;
+    color: var(--color-primary);
+    width: 25%;
+    font-size: var(--font-size-lg);
+}
+
+.svc-desc-v2 {
+    font-size: var(--font-size-base);
+    line-height: 1.6;
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+    .services-table-wrapper {
+        border-radius: var(--radius-lg);
+    }
+
+    .v2-table th {
+        display: none;
+        /* Hide headers on mobile */
+    }
+
+    .v2-table tr {
+        display: block;
+        border-bottom: 1px solid var(--color-border);
+        padding: var(--spacing-4);
+    }
+
+    .v2-table tr:last-child {
+        border-bottom: none;
+    }
+
+    .v2-table td {
+        display: block;
+        padding: var(--spacing-2) 0;
+        border: none;
+        width: 100%;
+    }
+
+    .svc-name-v2 {
+        margin-bottom: var(--spacing-2);
+        color: var(--color-primary);
+        font-size: var(--font-size-lg);
+    }
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 900px) {
+    .trading-item {
+        grid-template-columns: 1fr;
+    }
+
+    .trading-item.reverse .trading-image {
+        order: -1;
+    }
+
+    .trading-image {
+        height: 250px;
+    }
+
+    .process-diagram-v2 {
+        flex-direction: column;
+        gap: var(--spacing-8);
+    }
+
+    .flow-arrow {
+        transform: rotate(90deg);
+    }
+}
+
+@media (max-width: 600px) {
+    .business-tabs-v2 .container {
+        gap: var(--spacing-2);
+    }
+
+    .tab-btn-v2 {
+        padding: var(--spacing-3) var(--spacing-4);
+        font-size: var(--font-size-sm);
+    }
+
+    .philosophy-section {
+        grid-template-columns: 1fr;
+    }
+
+    .page-header {
+        height: 300px;
+    }
+}

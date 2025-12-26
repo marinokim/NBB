@@ -1,0 +1,289 @@
+{
+    "header": {
+        "nav": {
+            "home": "首页",
+            "about": "关于我们",
+            "business": "业务领域",
+            "network": "全球网络",
+            "contact": "联系我们"
+        }
+    },
+    "home": {
+        "visual_copy": "基于经过验证的行业与全球网络，NBB Networks 是您在国际贸易与物流领域的合作伙伴，在世界舞台上创造新的商业价值。",
+        "section_title": "主要认证现状",
+        "hero": {
+            "slides": {
+                "trading": {
+                    "title": "全球贸易合作伙伴",
+                    "subtitle": "连接市场，跨越国界传递价值。"
+                },
+                "logistics": {
+                    "title": "先进物流系统",
+                    "subtitle": "为您提供无缝的供应链解决方案。"
+                },
+                "main": {
+                    "title": "NBB Networks",
+                    "subtitle": "值得信赖的全球商业合作伙伴。"
+                }
+            }
+        },
+        "cert": {
+            "title": "卓越认证",
+            "items": {
+                "ctc": "专业贸易公司 (CTC)",
+                "export_tower": "出口之塔",
+                "motie": "产业通商资源部",
+                "kita": "韩国贸易协会"
+            }
+        },
+        "about_summary": {
+            "since": "自 2005 年起",
+            "title": "以信任连接全球市场",
+            "desc": "NBB Networks 一直是通过战略贸易和高效物流连接国际市场的先驱。我们的使命是为合作伙伴简化全球商业。",
+            "btn": "我们的故事",
+            "stats": {
+                "exp": "多年经验",
+                "partners": "全球合作伙伴",
+                "volume": "贸易量"
+            }
+        },
+        "business_summary": {
+            "title": "我们的专长",
+            "desc": "现代供应链的综合解决方案。",
+            "trading": {
+                "title": "全球贸易",
+                "desc": "采购和分销优质钢铁产品 (“NBB Steel”) 和高品质韩国红参 (“Ginseng Khan”)。"
+            },
+            "logistics": {
+                "title": "物流服务",
+                "desc": "从港口到仓库的端到端物流监控和实时跟踪。"
+            },
+            "network": {
+                "title": "全球网络",
+                "desc": "庞大的可靠合作伙伴网络，确保亚洲及其他地区的顺畅运营。"
+            },
+            "btn": "了解更多"
+        }
+    },
+    "about": {
+        "title": "关于 NBB Networks",
+        "subtitle": "连接世界，创造价值",
+        "intro": {
+            "headline": "以30年的产业底蕴，通过贸易与物流的协同效应<br />连接全球价值。",
+            "desc_1": "NBB Networks 是一家成立于2017年的国际贸易与物流专业公司。基于在钢铁贸易和海运领域积累了30多年的领导力和专业知识，我们凭借强大的全球网络和卓越的运营能力，建立了长期的商业信誉。",
+            "desc_2": "我们战略性地结合丰富的产业经验与稳固的商业网络，持续推动可持续增长。特别是通过贸易（Trading）和物流（Logistics）两大核心事业部的有机协作，我们超越单纯的产品供应，展示了优化客户业务全流程的差异化执行力。"
+        },
+        "business": {
+            "title": "Business Division",
+            "trading": {
+                "title": "贸易事业部",
+                "headline": "基于专业知识和网络的全球贸易解决方案",
+                "items": [
+                    {
+                        "title": "Steel Business",
+                        "desc": "基于与主要钢铁公司的强大合作伙伴关系，在韩国及三国间供应高品质钢铁产品"
+                    },
+                    {
+                        "title": "K-Product Expansion",
+                        "desc": "扩展钢铁领域的眼光，向全球市场供应韩国具有竞争力的优秀产品"
+                    },
+                    {
+                        "title": "Customized Sourcing",
+                        "desc": "应对特殊产业需求的产品组合多样化及提供客户定制型采购解决方案"
+                    }
+                ]
+            },
+            "logistics": {
+                "title": "物流部门",
+                "headline": "基于30年海运技术的综合物流服务",
+                "items": [
+                    {
+                        "title": "Global Forwarding",
+                        "desc": "基于丰富的海运经验，运营快速准确的全球物流网络"
+                    },
+                    {
+                        "title": "Optimized Supply Chain",
+                        "desc": "最大化速度和效率，优化复杂国际物流流程的定制型运输解决方案"
+                    },
+                    {
+                        "title": "Compliance & Safety",
+                        "desc": "通过符合国际标准的严格合规管理，创造安全可靠的物流价值"
+                    }
+                ]
+            }
+        },
+        "values": {
+            "title": "Core & Competencies & Vision",
+            "items": {
+                "partnership": {
+                    "title": "战略合作伙伴关系",
+                    "desc": "建立基于信任的合作关系，创造长期价值"
+                },
+                "quality": {
+                    "title": "质量第一",
+                    "desc": "遵守国际标准的彻底质量保证及验证系统"
+                },
+                "diversification": {
+                    "title": "投资组合多样化",
+                    "desc": "超越钢铁，向特殊产业及韩国优秀产品扩展业务领域"
+                },
+                "expertise": {
+                    "title": "解决方案能力高度化",
+                    "desc": "加强客户定制型支持及专业流程"
+                },
+                "customer": {
+                    "title": "以客户为中心的管理",
+                    "desc": "优先考虑客户成功的灵活、先发制人的应对"
+                }
+            }
+        },
+        "vision": {
+            "title": "Your Trusted Global Partner",
+            "desc": "即使在瞬息万变的全球市场环境中，NBB Networks也将基于经过验证的产业经验和专业化能力，作为国际贸易及物流领域最值得信赖的全球合作伙伴，不断证明新的商业成果。"
+        }
+    },
+    "business": {
+        "title": "业务领域",
+        "subtitle": "战略贸易与先进物流",
+        "tabs": {
+            "trading": "贸易部门",
+            "logistics": "物流部门"
+        },
+        "trading": {
+            "title": "贸易部门",
+            "back_to_business": "返回业务领域",
+            "desc": "以韩国及三国间的钢铁产品为中心，提供基于信任和专业的解决方案。",
+            "intro": {
+                "main": "贸易事业部以韩国及第三国各地的钢铁产品为中心，开展全球贸易，以信任和专业性为基础，提供具有竞争力的解决方案。以长期积累的钢铁领域的知识为基础，超越钢铁，向全世界市场供应韩国优秀且具有竞争力的产品，扩张全球商务领域。",
+                "sub": "超越单纯的商品移动，实践“可持续的伙伴关系”和“彻底的质量优先主义”这一核心价值，作为连接全球供应链的有价值的合作伙伴，以此追求革新和共生。"
+            },
+            "philosophy": {
+                "partnership": "可持续的伙伴关系",
+                "quality": "彻底的质量优先主义"
+            },
+            "steel": {
+                "title": "钢铁业务",
+                "page_desc": "用于建筑和制造的高品质钢铁产品。",
+                "item_desc": "经国际标准验证的优质材料。",
+                "items": [
+                    "HRC / HRP (Hot Rolled Coil / Plate)",
+                    "CR / GI / GL / ZAM / Pre-painted",
+                    "Aluminized Steel / Si Steel",
+                    "STS (Stainless Steel)",
+                    "Long Product (Wire Rod, Rebar)"
+                ]
+            },
+            "kproduct": {
+                "title": "K-Product 扩展",
+                "page_desc": "优质韩国红参及健康补充剂。",
+                "default_desc": "出口最优质的韩国红参。",
+                "items": [
+                    {
+                        "name": "红参产品",
+                        "desc": "代表性的韩国健康食品"
+                    },
+                    {
+                        "name": "农产品",
+                        "desc": "雪香草莓等优质农产品"
+                    },
+                    {
+                        "name": "二手车",
+                        "desc": "经过质量验证的韩国二手车出口"
+                    }
+                ]
+            }
+        },
+        "logistics": {
+            "title": "物流部门",
+            "desc": "安全、快速、具有成本竞争力的综合物流服务。",
+            "intro": "为了安全、快速的运输，提供顾客定制型物流解决方案和具有成本竞争力的高品质综合物流服务。从海上运输、航空运输、陆上运输、复合运输、仓库及通关，在物流全领域体验最佳服务。",
+            "flow_title": "物流流程",
+            "process": {
+                "shipper": "发货人",
+                "inland": "内陆运输",
+                "cfs": "CFS (集装箱货运站)",
+                "air": "空运",
+                "ocean": "海运",
+                "rail": "铁路运输",
+                "consignee": "收货人"
+            },
+            "table": {
+                "title": "服务详情",
+                "headers": [
+                    "服务",
+                    "说明"
+                ],
+                "rows": [
+                    {
+                        "svc": "FCL",
+                        "desc": "整箱货运 - 针对大宗货物的优化集装箱运输"
+                    },
+                    {
+                        "svc": "LCL",
+                        "desc": "拼箱货运 - 针对少量货物的拼箱服务"
+                    },
+                    {
+                        "svc": "特殊货物",
+                        "desc": "项目货物、冷冻/冷藏、危险品等特殊货物运输"
+                    },
+                    {
+                        "svc": "门到门",
+                        "desc": "从提货到通关、最终配送的一站式服务"
+                    },
+                    {
+                        "svc": "海空联运",
+                        "desc": "结合海运与空运优势的合理复合运输"
+                    },
+                    {
+                        "svc": "一站式服务",
+                        "desc": "进出口相关通关、仓储、运输等全套代理服务"
+                    }
+                ]
+            }
+        }
+    },
+    "network": {
+        "title": "全球网络",
+        "desc": "NBB Networks 与世界主要枢纽连接的全球现状。",
+        "regions": {
+            "asia": "亚洲 (中国, 日本, 台湾)",
+            "sea": "东南亚 (越南, 泰国, 菲律宾, 印度尼西亚)",
+            "me": "中东 (阿联酋, 卡塔尔, 沙特阿拉伯, 土耳其)",
+            "namerica": "北美 (美国, 加拿大, 墨西哥, 多米尼加共和国)",
+            "samerica": "南美 (智利)",
+            "europe": "欧洲 (德国, 意大利, 荷兰, 西班牙, 葡萄牙)",
+            "others": "其他 (南非, 印度)",
+            "india": "印度",
+            "sa": "南非"
+        },
+        "partners": {
+            "title": "Our Partners",
+            "trading": "贸易合作伙伴",
+            "logistics": "物流合作伙伴"
+        }
+    },
+    "contact": {
+        "title": "Contact Us",
+        "subtitle": "联系我们的全球团队",
+        "location": "公司位置",
+        "address": {
+            "label": "地址",
+            "value": "首尔特别市江南区德黑兰路77街11-16，东贤大厦8楼"
+        },
+        "email": {
+            "trading": "贸易咨询",
+            "logistics": "物流咨询"
+        }
+    },
+    "footer": {
+        "slogan": "Your Trusted Global Partner",
+        "address": "8Fl, Donghyun Bldg., 11-16 Teheran-ro 77-gil, Gangnam-gu, Seoul, 06159, Republic of Korea",
+        "copyright": "© {year} NBB Networks. All rights reserved.",
+        "company": "公司信息",
+        "legal": "法律声明",
+        "links": {
+            "privacy": "隐私政策",
+            "terms": "服务条款"
+        }
+    }
+}

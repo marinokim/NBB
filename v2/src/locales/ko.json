@@ -1,0 +1,291 @@
+{
+    "header": {
+        "nav": {
+            "home": "홈",
+            "about": "회사소개",
+            "business": "사업영역",
+            "network": "글로벌 네트워크",
+            "contact": "문의하기"
+        }
+    },
+    "home": {
+        "visual_copy": "NBB Networks는 검증된 산업 경험과 글로벌 네트워크를 바탕으로, 세계 시장을 무대로 새로운 비즈니스 가치를 창출하는 국제 트레이딩·물류 파트너입니다.",
+        "section_title": "주요 인증 현황",
+        "hero": {
+            "slides": {
+                "trading": {
+                    "title": "글로벌 무역 파트너",
+                    "subtitle": "시장을 연결하고 국경을 넘어 가치를 전달합니다."
+                },
+                "logistics": {
+                    "title": "선진 물류 시스템",
+                    "subtitle": "비즈니스를 위한 완벽한 공급망 솔루션."
+                },
+                "main": {
+                    "title": "NBB Networks",
+                    "subtitle": "글로벌 상거래의 신뢰할 수 있는 파트너."
+                }
+            }
+        },
+        "cert": {
+            "title": "Proven Excellence",
+            "items": {
+                "ctc": "전문무역상사 (CTC)",
+                "export_tower": "수출의 탑",
+                "motie": "산업통상자원부",
+                "kita": "한국무역협회"
+            }
+        },
+        "about_summary": {
+            "since": "Since 2005",
+            "title": "신뢰로 세계 시장을 잇다",
+            "desc": "NBB Networks는 전략적 무역과 효율적인 물류를 통해 국제 시장을 연결하는 선구자 역할을 해왔습니다. 우리의 사명은 파트너를 위한 글로벌 커머스를 단순화하는 것입니다.",
+            "btn": "회사 소개",
+            "stats": {
+                "exp": "Years Experience",
+                "partners": "Global Partners",
+                "volume": "Trade Volume"
+            }
+        },
+        "business_summary": {
+            "title": "Our Expertise",
+            "desc": "현대 공급망을 위한 포괄적인 솔루션.",
+            "trading": {
+                "title": "Global Trading",
+                "desc": "프리미엄 철강 제품 ('NBB Steel') 및 고품질 한국 인삼 ('Ginseng Khan') 소싱 및 유통."
+            },
+            "logistics": {
+                "title": "Logistics",
+                "desc": "항만에서 창고까지 실시간 추적을 통한 엔드 투 엔드 물류 모니터링."
+            },
+            "network": {
+                "title": "Network",
+                "desc": "아시아 및 전 세계의 원활한 운영을 보장하는 신뢰할 수 있는 파트너들의 방대한 네트워크."
+            },
+            "btn": "자세히 보기"
+        }
+    },
+    "about": {
+        "title": "NBB Networks 소개",
+        "subtitle": "세상을 연결하고 가치를 창출합니다",
+        "intro": {
+            "headline": "30년의 산업 유산, 트레이딩과 물류의 시너지로<br />글로벌 가치를 연결합니다.",
+            "desc_1": "NBB Networks는 2017년에 설립된 국제 트레이딩 및 물류 전문기업입니다. 철강 트레이딩과 해상 운송 분야에서 30년 이상 축적된 리더쉽과 전문성을 기반으로 탄생한 당사는, 강력한 글로벌 네트워크와 탁월한 운영 역량을 바탕으로 장기적인 비즈니스 신뢰도를 구축해 왔습니다.",
+            "desc_2": "우리는 풍부한 산업 경험과 견고한 비즈니스 네트워크를 전략적으로 결합하여 지속 가능한 성장을 이어가고 있습니다. 특히, Trading과 Logistics 두 핵심 사업부의 유기적인 협업을 통해, 단순한 상품 공급을 넘어 고객의 비즈니스 전 과정을 최적화 하는 차별화된 실행력을 선보입니다."
+        },
+        "business": {
+            "title": "Business Division",
+            "trading": {
+                "title": "Trading Division (무역 사업부)",
+                "headline": "전문성과 네트워크를 바탕으로 한 글로벌 트레이딩 솔루션",
+                "items": [
+                    {
+                        "title": "Steel Business",
+                        "desc": "주요 철강사와의 강력한 파트너십을 바탕으로 한국 및 삼국간 고품질 철강제품 공급"
+                    },
+                    {
+                        "title": "K-Product Expansion",
+                        "desc": "철강 분야의 안목을 확장하여 대한민국의 경쟁력 있는 우수한 제품군을 세계 시장에 공급"
+                    },
+                    {
+                        "title": "Customized Sourcing",
+                        "desc": "특수 산업 수요에 대응하는 제품 포트폴리오 다각화 및 고객 맞춤형 구매(조달) 솔루션 제공"
+                    }
+                ]
+            },
+            "logistics": {
+                "title": "Logistics Division (물류 사업부)",
+                "headline": "30년 해상 운송 노하우 기반의 통합 물류 서비스",
+                "items": [
+                    {
+                        "title": "Global Forwarding",
+                        "desc": "풍부한 해상 운송 경험을 바탕으로 빠르고 정확한 글로벌 물류 네트워크 운영"
+                    },
+                    {
+                        "title": "Optimized Supply Chain",
+                        "desc": "속도와 효율을 극대화하여 복잡한 국제 물류 프로세스를 최적화한 맞춤형 운송 솔루션"
+                    },
+                    {
+                        "title": "Compliance & Safety",
+                        "desc": "국제 기준에 부합하는 철저한 컴플라이언스 관리로 안전하고 신뢰할 수 있는 물류 가치 창출"
+                    }
+                ]
+            }
+        },
+        "values": {
+            "title": "Core Competencies",
+            "items": {
+                "partnership": {
+                    "title": "전략적 파트너십",
+                    "desc": "장기적 가치를 창출하는 신뢰 기반의 협력 관계 구축"
+                },
+                "quality": {
+                    "title": "품질 우선주의",
+                    "desc": "국제 표준을 준수하는 철저한 품질 보증 및 검증 시스템"
+                },
+                "diversification": {
+                    "title": "포트폴리오 다각화",
+                    "desc": "철강을 넘어 특수 산업 및 한국산 우수 제품으로 사업 영역 확대"
+                },
+                "expertise": {
+                    "title": "솔루션 역량 고도화",
+                    "desc": "고객 맞춤형 지원 및 전문적인 프로세스 강화"
+                },
+                "customer": {
+                    "title": "고객 중심 경영",
+                    "desc": "고객의 성공을 최우선으로 하는 유연하고 선제적인 대응"
+                }
+            }
+        },
+        "vision": {
+            "title": "Your Trusted Global Partner",
+            "desc": "급변하는 글로벌 시장 환경 속에서도 NBB Networks는 검증된 산업 경험과 전문화된 역량을 바탕으로, 국제 트레이딩 및 물류 분야에서 가장 신뢰받는 글로벌 파트너로서 새로운 비즈니스 성과를 끊임없이 증명해 나가겠습니다."
+        },
+        "mission": "30년의 산업 유산, 트레이딩과 물류의 시너지로 글로벌 가치를 연결합니다.",
+        "values_summary": "전략적 파트너십, 품질 우선주의, 포트폴리오 다각화, 솔루션 역량 고도화, 고객 중심 경영"
+    },
+    "business": {
+        "title": "사업 영역",
+        "subtitle": "전략적 무역 & 선진 물류",
+        "tabs": {
+            "trading": "무역 사업부",
+            "logistics": "물류 사업부"
+        },
+        "trading": {
+            "title": "Trading Division",
+            "back_to_business": "사업영역으로 돌아가기",
+            "desc": "한국 및 삼국 간 철강제품 중심, 신뢰와 전문성 기반 솔루션 제공",
+            "intro": {
+                "main": "Trading 사업부는 한국 및 삼국 간 철강제품을 중심으로 글로벌 무역을 수행하며, 신뢰와 전문성을 기반으로 경쟁력 있는 솔루션을 제공합니다. 오랜 기간 축적된 철강 분야의 노하우를 바탕으로, 현재는 철강을 넘어 한국의 우수하고 경쟁력 있는 제품들을 전 세계시장에 공급하며 글로벌 비즈니스 영역을 확장하고 있습니다.",
+                "sub": "단순한 상품의 이동을 넘어 '지속 가능한 파트너쉽'과 '철저한 품질 우선주의'를 핵심 가치로 실천하며, 글로벌 공급망을 연결하는 가치 있는 파트너로서 혁신과 상생을 지향 합니다."
+            },
+            "philosophy": {
+                "partnership": "지속 가능한 파트너십",
+                "quality": "철저한 품질 우선주의"
+            },
+            "steel": {
+                "title": "철강 사업",
+                "page_desc": "건설 및 제조를 위한 고품질 철강 제품.",
+                "item_desc": "국제 표준에 맞춰 검증된 프리미엄 자재.",
+                "items": [
+                    "HRC / HRP (Hot Rolled Coil / Plate)",
+                    "CR / GI / GL / ZAM / Pre-painted",
+                    "Aluminized Steel / Si Steel",
+                    "STS (Stainless Steel)",
+                    "Long Product (Wire Rod, Rebar)"
+                ]
+            },
+            "kproduct": {
+                "title": "K-Product 확장",
+                "page_desc": "프리미엄 한국 인삼 및 건강보조식품.",
+                "default_desc": "최고 품질의 한국 홍삼 수출.",
+                "items": [
+                    {
+                        "name": "인삼/홍삼 제품",
+                        "desc": "대한민국 대표 건강식품 홍삼"
+                    },
+                    {
+                        "name": "농산물",
+                        "desc": "설향 딸기 등 프리미엄 농산물"
+                    },
+                    {
+                        "name": "중고차",
+                        "desc": "검증된 품질의 한국 중고차 수출"
+                    }
+                ]
+            }
+        },
+        "logistics": {
+            "title": "Logistics Division",
+            "desc": "안전하고 신속한 운송, Cost 경쟁력을 갖춘 종합 물류 서비스",
+            "intro": "안전하고 신속한 운송을 위한 고객 맞춤형 물류 Solution과 Cost 경쟁력을 갖춘 고품질의 종합물류 서비스를 제공합니다. 해상 운송, 항공 운송, 육상 운송, 복합 운송, 창고 및 통관에 이르기까지 물류 전 영역에서 최적의 서비스를 경험하세요.",
+            "flow_title": "Logistics Process",
+            "process": {
+                "shipper": "화주 (Shipper)",
+                "inland": "내륙 운송",
+                "cfs": "CFS (보관/작업)",
+                "air": "항공 운송",
+                "ocean": "해상 운송",
+                "rail": "철도 운송",
+                "consignee": "수하인 (Consignee)"
+            },
+            "table": {
+                "title": "Service Details",
+                "headers": [
+                    "Service",
+                    "Description"
+                ],
+                "rows": [
+                    {
+                        "svc": "FCL",
+                        "desc": "Full Container Load - 대량 화물에 최적화된 컨테이너 운송"
+                    },
+                    {
+                        "svc": "LCL",
+                        "desc": "Less than Container Load - 소량 화물을 위한 혼재 운송 서비스"
+                    },
+                    {
+                        "svc": "Special Cargo",
+                        "desc": "Project 화물, 냉동/냉장, 위험물 등 특수 화물 운송"
+                    },
+                    {
+                        "svc": "Door to Door",
+                        "desc": "Pickup부터 통관, 최종 배송까지 One-Stop 서비스"
+                    },
+                    {
+                        "svc": "Sea & Air",
+                        "desc": "해상과 항공의 장점을 결합한 합리적인 복합 운송"
+                    },
+                    {
+                        "svc": "One-Stop SVC",
+                        "desc": "수출입 관련 통관, 보관, 운송 등 일괄 대행 서비스"
+                    }
+                ]
+            }
+        }
+    },
+    "network": {
+        "title": "글로벌 네트워크",
+        "desc": "세계 주요 거점과 연결된 NBB Networks의 글로벌 현황입니다.",
+        "regions": {
+            "asia": "아시아 (중국, 일본, 대만)",
+            "sea": "동남아시아 (베트남, 태국, 필리핀, 인도네시아)",
+            "me": "중동 (UAE, 카타르, 사우디아라비아, 터키)",
+            "namerica": "북중미 (미국, 캐나다, 멕시코, 도미니카 공화국)",
+            "samerica": "남미 (칠레)",
+            "europe": "유럽 (독일, 이탈리아, 네덜란드, 스페인, 포르투갈)",
+            "others": "기타 (남아프리카 공화국, 인도)",
+            "india": "인도",
+            "sa": "남아프리카 공화국"
+        },
+        "partners": {
+            "title": "Our Partners",
+            "trading": "Trading Partners",
+            "logistics": "Logistics Partners"
+        }
+    },
+    "contact": {
+        "title": "Contact Us",
+        "subtitle": "글로벌 팀과 상담하세요",
+        "location": "오시는 길",
+        "address": {
+            "label": "Address",
+            "value": "서울특별시 강남구 테헤란로 77길 11-16, 동현빌딩 8층"
+        },
+        "email": {
+            "trading": "Trading Inquiry",
+            "logistics": "Logistics Inquiry"
+        }
+    },
+    "footer": {
+        "slogan": "Your Trusted Global Partner",
+        "address": "서울특별시 강남구 테헤란로 77길 11-16, 동현빌딩 8층",
+        "copyright": "© {year} NBB Networks. All rights reserved.",
+        "company": "기업 정보",
+        "legal": "법적 고지",
+        "links": {
+            "privacy": "개인정보처리방침",
+            "terms": "이용약관"
+        }
+    }
+}

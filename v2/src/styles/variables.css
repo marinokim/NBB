@@ -1,0 +1,76 @@
+:root {
+    /* Colors - V2 Palette (Deep Navy / Industrial) */
+    --color-primary: #002b5c;
+    /* Deep Navy */
+    --color-primary-light: #004080;
+    --color-primary-dark: #001a38;
+
+    --color-secondary: #64748b;
+    /* Steel Gray */
+    --color-secondary-light: #94a3b8;
+    --color-secondary-dark: #334155;
+
+    --color-accent: #0ea5e9;
+    /* Vibrant Blue/Teal */
+    --color-accent-hover: #0284c7;
+
+    /* Neutrals */
+    --color-text-primary: #1e293b;
+    /* Slate 800 */
+    --color-text-secondary: #475569;
+    /* Slate 600 */
+    --color-text-inverse: #ffffff;
+
+    --color-bg-base: #ffffff;
+    --color-bg-subtle: #f8fafc;
+    /* Slate 50 */
+    --color-bg-dark: #0f172a;
+    /* Slate 900 */
+
+    --color-border: #e2e8f0;
+    /* Slate 200 */
+
+    /* Typography */
+    --font-family-base: 'Pretendard', 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+    --font-size-base: 16px;
+    --font-size-sm: 14px;
+    --font-size-lg: 18px;
+    --font-size-xl: 24px;
+    --font-size-2xl: 32px;
+    --font-size-3xl: 48px;
+
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+
+    /* Spacing */
+    --spacing-1: 4px;
+    --spacing-2: 8px;
+    --spacing-3: 12px;
+    --spacing-4: 16px;
+    --spacing-6: 24px;
+    --spacing-8: 32px;
+    --spacing-12: 48px;
+    --spacing-16: 64px;
+
+    /* Layout */
+    --header-height: 80px;
+    --max-width: 1400px;
+    /* Wider for V2 */
+
+    /* Effects */
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --radius-xl: 20px;
+
+    /* Actions */
+    --color-action: var(--color-accent);
+    --color-action-hover: var(--color-accent-hover);
+
+    --transition-base: 0.3s ease;
+}

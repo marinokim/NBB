@@ -1,0 +1,71 @@
+.product-page-v2 {
+    min-height: 100vh;
+    padding-bottom: var(--spacing-16);
+    background-color: var(--color-bg-base);
+}
+
+.steel-header {
+    background: linear-gradient(rgba(0, 43, 92, 0.9), rgba(0, 43, 92, 0.7)), url('../assets/images/hero/hero_steel_coils.png');
+    /* properties handled by global .page-header */
+}
+
+.back-link-v2 {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    color: var(--color-text-secondary);
+    font-weight: 500;
+    margin-bottom: var(--spacing-8);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.back-link-v2:hover {
+    color: var(--color-primary);
+}
+
+.product-grid-v2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--spacing-6);
+}
+
+.product-card-v2 {
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card-v2:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--color-accent);
+}
+
+.product-image-placeholder-v2 {
+    height: 200px;
+    background: var(--color-bg-subtle);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-secondary-light);
+}
+
+.product-info-v2 {
+    padding: var(--spacing-6);
+}
+
+.product-info-v2 h3 {
+    font-size: var(--font-size-xl);
+    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-2);
+    font-weight: 700;
+}
+
+.product-info-v2 p {
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-md);
+    line-height: 1.6;
+}

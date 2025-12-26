@@ -1,0 +1,205 @@
+/* Shared Section Styles */
+.section-title {
+    font-size: var(--font-size-3xl);
+    /* Matched to Global Standard (48px) */
+    font-weight: 800;
+    /* Matched to Global Standard */
+    margin-bottom: var(--spacing-6);
+    color: var(--color-primary);
+    line-height: 1.2;
+}
+
+.section-subtitle {
+    color: var(--color-accent);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: var(--spacing-3);
+    display: block;
+}
+
+.section-text {
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-8);
+    line-height: 1.8;
+    font-size: var(--font-size-lg);
+    /* Matched to Standard (18px) */
+    max-width: 600px;
+}
+
+.btn-text {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    color: var(--color-primary);
+    font-weight: 600;
+    text-decoration: none;
+    transition: gap 0.2s;
+}
+
+.btn-text:hover {
+    gap: var(--spacing-3);
+    color: var(--color-primary-light);
+}
+
+/* About Section */
+.section-about {
+    padding: var(--spacing-20) 0;
+    background: linear-gradient(135deg, var(--color-bg-base) 0%, #f0f9ff 100%);
+    /* Subtle gradient */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Decorative background circle */
+.section-about::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    width: 400px;
+    height: 400px;
+    background: rgba(14, 165, 233, 0.05);
+    /* Light blue */
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-16);
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.about-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-6);
+    background: var(--color-white);
+    padding: var(--spacing-10);
+    border-radius: var(--radius-xl);
+    box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.stat-item {
+    text-align: center;
+    position: relative;
+}
+
+/* Divider between stats */
+.stat-item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: -12px;
+    top: 20%;
+    height: 60%;
+    width: 1px;
+    background: var(--color-border);
+}
+
+.stat-number {
+    display: block;
+    font-size: var(--font-size-3xl);
+    font-weight: 800;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-2);
+}
+
+.stat-label {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    font-weight: 500;
+}
+
+/* Business Section */
+.section-business {
+    padding: var(--spacing-16) 0;
+    background-color: var(--color-bg-subtle);
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: var(--spacing-12);
+}
+
+.section-desc {
+    color: var(--color-text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.business-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-8);
+}
+
+.business-card {
+    background: var(--color-bg-base);
+    padding: var(--spacing-8);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid var(--color-border);
+}
+
+.business-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--color-accent);
+}
+
+.card-icon {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-6);
+}
+
+.business-card h3 {
+    font-size: var(--font-size-xl);
+    font-weight: 600;
+    margin-bottom: var(--spacing-3);
+    color: var(--color-text-primary);
+}
+
+.business-card p {
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    margin-bottom: var(--spacing-6);
+}
+
+.card-link {
+    color: var(--color-accent);
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+}
+
+.card-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-accent);
+    transition: width 0.3s;
+}
+
+.business-card:hover .card-link::after {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-stats {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

@@ -1,0 +1,133 @@
+@import './reset.css';
+@import './variables.css';
+
+body {
+    font-family: var(--font-family-base);
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-base);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Typography Utilities */
+.text-primary {
+    color: var(--color-primary);
+}
+
+.text-secondary {
+    color: var(--color-text-secondary);
+}
+
+.text-accent {
+    color: var(--color-accent);
+}
+
+.text-inverse {
+    color: var(--color-text-inverse);
+}
+
+.bg-primary {
+    background-color: var(--color-primary);
+}
+
+.bg-dark {
+    background-color: var(--color-bg-dark);
+}
+
+/* Layout Utilities */
+.container {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--spacing-4);
+}
+
+.full-width {
+    width: 100%;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Standard Page Header */
+.page-header {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--color-text-inverse);
+    margin-top: -80px;
+    /* Overlap header */
+    padding-top: 80px;
+    /* Compensate for overlap */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+}
+
+.page-header h1 {
+    font-size: var(--font-size-3xl);
+    font-weight: 700;
+    margin-bottom: var(--spacing-4);
+    letter-spacing: -0.5px;
+}
+
+.page-header p {
+    font-size: var(--font-size-xl);
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* Standard Section Title */
+.v2-section-title {
+    font-size: var(--font-size-3xl);
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: var(--spacing-16);
+    color: var(--color-primary);
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+}
+
+.v2-section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: var(--color-accent);
+    border-radius: 2px;
+}
+
+.v2-section {
+    padding: var(--spacing-24) 0;
+}
