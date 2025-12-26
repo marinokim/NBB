@@ -1,5 +1,5 @@
 import React from 'react';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 import LayoutV2 from './components/Layout/LayoutV2';
 import HomeV2 from './pages/HomeV2';
 import BusinessV2 from './pages/BusinessV2';
@@ -9,7 +9,7 @@ import ContactV2 from './pages/ContactV2';
 import SteelProductsV2 from './pages/SteelProductsV2';
 import KProductsV2 from './pages/KProductsV2';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <LayoutV2 />,
@@ -44,9 +44,7 @@ const router = createBrowserRouter([
       },
     ],
   },
-], {
-  basename: import.meta.env.BASE_URL
-});
+]);
 
 function App() {
   return <RouterProvider router={router} />;
