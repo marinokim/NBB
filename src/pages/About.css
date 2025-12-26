@@ -74,114 +74,149 @@
     gap: var(--spacing-lg);
 }
 
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
+    /* Initially hidden */
+}
+
+.delay-100 {
+    animation-delay: 0.1s;
+}
+
+.delay-200 {
+    animation-delay: 0.2s;
+}
+
+.delay-300 {
+    animation-delay: 0.3s;
+}
+
+.delay-400 {
+    animation-delay: 0.4s;
+}
+
+.delay-500 {
+    animation-delay: 0.5s;
+}
+
+.delay-600 {
+    animation-delay: 0.6s;
+}
+
+/* Business Card Enhancement */
 .business-card {
-    padding: 40px;
+    padding: 50px;
     background: var(--color-white);
     border: 1px solid var(--color-border);
-    border-radius: 8px;
-    transition: box-shadow var(--transition-normal);
+    border-radius: 12px;
+    transition: all var(--transition-normal);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
 }
 
 .business-card:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+    transform: translateY(-5px);
+    border-color: var(--color-secondary);
 }
 
-.business-card h3 {
-    font-size: 24px;
-    margin-bottom: var(--spacing-md);
-    color: var(--color-primary);
+.business-headline {
+    font-size: 18px;
+    font-weight: 600;
+    font-style: italic;
+    color: var(--color-text-dark);
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
 }
 
-.business-card p {
+.business-list {
+    list-style: none;
+    padding: 0;
+}
+
+.business-list li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    line-height: 1.6;
     color: var(--color-text-light);
 }
 
-/* Core Competencies */
-.about-values {
-    padding: 100px 0;
-    background-color: #f8f9fa;
-    text-align: center;
+.business-list li:before {
+    content: '•';
+    color: var(--color-secondary);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    font-size: 1.2em;
+    top: -2px;
 }
 
-.values-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    margin-top: 60px;
+.business-list li strong {
+    color: var(--color-text-dark);
+    font-weight: 700;
+    margin-right: 5px;
 }
 
+/* Core Competencies Enhancement */
 .value-item {
     background: var(--color-white);
-    padding: 40px 30px;
+    padding: 40px 25px;
     border-radius: 16px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 24px;
+    gap: 15px;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     border: 1px solid rgba(0, 0, 0, 0.05);
     position: relative;
     overflow: hidden;
+    height: 100%;
 }
 
-.value-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0, 71, 160, 0.1);
-    border-color: rgba(0, 123, 255, 0.2);
-}
-
-.value-item::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background: var(--color-secondary);
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
-}
-
-.value-item:hover::after {
-    transform: scaleX(1);
-}
-
-.value-icon-wrapper {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background: #eef6ff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--color-secondary);
-    transition: all 0.3s ease;
-}
-
-.value-item:hover .value-icon-wrapper {
-    background: var(--color-secondary);
-    color: var(--color-white);
-    transform: scale(1.1);
-}
-
-.value-text {
-    font-weight: 700;
-    font-size: 20px;
-    color: var(--color-text-dark);
+.value-desc {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    margin-top: 5px;
 }
 
 .about-vision {
-    padding: 60px 0;
+    padding: 80px 0;
     text-align: center;
-    background: var(--color-primary);
+    background: linear-gradient(135deg, var(--color-primary) 0%, #003366 100%);
     color: var(--color-white);
 }
 
 .about-vision h2 {
     font-size: 32px;
     font-family: 'Times New Roman', serif;
-    /* Or keep sans-serif */
     letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.vision-desc {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.8;
+    opacity: 0.9;
 }
 
 @media (min-width: 768px) {

@@ -9,7 +9,7 @@
         }
     },
     "home": {
-        "visual_copy": "基于经过验证的行业与全球网络，NBB Networks 是您在国际际贸易与物流领域的合作伙伴，在世界舞台上创造新的商业价值。",
+        "visual_copy": "基于经过验证的行业与全球网络，NBB Networks 是您在国际贸易与物流领域的合作伙伴，在世界舞台上创造新的商业价值。",
         "section_title": "主要认证现状",
         "hero": {
             "title": "全球贸易与物流合作伙伴",
@@ -33,26 +33,73 @@
             "desc_2": "我们战略性地结合丰富的产业经验与稳固的商业网络，持续推动可持续增长。特别是通过贸易（Trading）和物流（Logistics）两大核心事业部的有机协作，我们超越单纯的产品供应，展示了优化客户业务全流程的差异化执行力。"
         },
         "business": {
+            "title": "Business Division",
             "trading": {
-                "title": "贸易部门",
-                "desc": "基于专业性和网络的钢铁及韩国产品采购解决方案。"
+                "title": "贸易事业部",
+                "headline": "基于专业知识和网络的全球贸易解决方案",
+                "items": [
+                    {
+                        "title": "Steel Business",
+                        "desc": "基于与主要钢铁公司的强大合作伙伴关系，在韩国及三国间供应高品质钢铁产品"
+                    },
+                    {
+                        "title": "K-Product Expansion",
+                        "desc": "扩展钢铁领域的眼光，向全球市场供应韩国具有竞争力的优秀产品"
+                    },
+                    {
+                        "title": "Customized Sourcing",
+                        "desc": "应对特殊产业需求的产品组合多样化及提供客户定制型采购解决方案"
+                    }
+                ]
             },
             "logistics": {
                 "title": "物流部门",
-                "desc": "基于30年海运技术的综合物流服务（货运代理，供应链）。"
+                "headline": "基于30年海运技术的综合物流服务",
+                "items": [
+                    {
+                        "title": "Global Forwarding",
+                        "desc": "基于丰富的海运经验，运营快速准确的全球物流网络"
+                    },
+                    {
+                        "title": "Optimized Supply Chain",
+                        "desc": "最大化速度和效率，优化复杂国际物流流程的定制型运输解决方案"
+                    },
+                    {
+                        "title": "Compliance & Safety",
+                        "desc": "通过符合国际标准的严格合规管理，创造安全可靠的物流价值"
+                    }
+                ]
             }
         },
         "values": {
-            "title": "核心竞争力",
+            "title": "Core & Competencies & Vision",
             "items": {
-                "partnership": "战略合作伙伴关系",
-                "quality": "质量第一",
-                "diversification": "投资组合多样化",
-                "expertise": "行业专业知识",
-                "global": "全球网络"
+                "partnership": {
+                    "title": "战略合作伙伴关系",
+                    "desc": "建立基于信任的合作关系，创造长期价值"
+                },
+                "quality": {
+                    "title": "质量第一",
+                    "desc": "遵守国际标准的彻底质量保证及验证系统"
+                },
+                "diversification": {
+                    "title": "投资组合多样化",
+                    "desc": "超越钢铁，向特殊产业及韩国优秀产品扩展业务领域"
+                },
+                "expertise": {
+                    "title": "解决方案能力高度化",
+                    "desc": "加强客户定制型支持及专业流程"
+                },
+                "customer": {
+                    "title": "以客户为中心的管理",
+                    "desc": "优先考虑客户成功的灵活、先发制人的应对"
+                }
             }
         },
-        "vision": "Your Trusted Global Partner"
+        "vision": {
+            "title": "Your Trusted Global Partner",
+            "desc": "即使在瞬息万变的全球市场环境中，NBB Networks也将基于经过验证的产业经验和专业化能力，作为国际贸易及物流领域最值得信赖的全球合作伙伴，不断证明新的商业成果。"
+        }
     },
     "business": {
         "tabs": {
@@ -72,7 +119,6 @@
             },
             "steel": {
                 "title": "钢铁业务",
-                "link_text": "查看产品列表",
                 "items": [
                     "HRC / HRP (Hot Rolled Coil / Plate)",
                     "CR / GI / GL / ZAM / Pre-painted",
@@ -83,6 +129,7 @@
             },
             "kproduct": {
                 "title": "K-Product 扩展",
+                "page_desc": "将韩国最优质的产品推广至全球市场。",
                 "items": [
                     {
                         "name": "红参产品",
@@ -104,6 +151,15 @@
             "desc": "安全、快速、具有成本竞争力的综合物流服务。",
             "intro": "为了安全、快速的运输，提供顾客定制型物流解决方案和具有成本竞争力的高品质综合物流服务。从海上运输、航空运输、陆上运输、复合运输、仓库及通关，在物流全领域体验最佳服务。",
             "flow_title": "物流流程",
+            "process": {
+                "shipper": "发货人",
+                "inland": "内陆运输",
+                "cfs": "CFS (集装箱货运站)",
+                "air": "空运",
+                "ocean": "海运",
+                "rail": "铁路运输",
+                "consignee": "收货人"
+            },
             "table": {
                 "title": "服务详情",
                 "headers": [
@@ -146,7 +202,8 @@
             "asia": "亚洲 (中国, 日本, 台湾)",
             "sea": "东南亚 (越南, 泰国, 菲律宾, 印度尼西亚)",
             "me": "中东 (阿联酋, 卡塔尔, 沙特阿拉伯, 土耳其)",
-            "americas": "美洲 (美国, 加拿大, 墨西哥, 智利, 多米尼加共和国)",
+            "namerica": "北美 (美国, 加拿大, 墨西哥, 多米尼加共和国)",
+            "samerica": "南美 (智利)",
             "europe": "欧洲 (德国, 意大利, 荷兰, 西班牙, 葡萄牙)",
             "others": "其他 (南非, 印度)",
             "india": "印度",

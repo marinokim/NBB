@@ -1,11 +1,11 @@
 {
     "header": {
         "nav": {
-            "home": "HOME",
-            "about": "ABOUT US",
-            "business": "BUSINESS",
-            "network": "NETWORK",
-            "contact": "CONTACT"
+            "home": "홈",
+            "about": "회사소개",
+            "business": "사업영역",
+            "network": "글로벌 네트워크",
+            "contact": "문의하기"
         }
     },
     "home": {
@@ -33,26 +33,73 @@
             "desc_2": "우리는 풍부한 산업 경험과 견고한 비즈니스 네트워크를 전략적으로 결합하여 지속 가능한 성장을 이어가고 있습니다. 특히, Trading과 Logistics 두 핵심 사업부의 유기적인 협업을 통해, 단순한 상품 공급을 넘어 고객의 비즈니스 전 과정을 최적화 하는 차별화된 실행력을 선보입니다."
         },
         "business": {
+            "title": "Business Division",
             "trading": {
-                "title": "Trading Division",
-                "desc": "전문성과 네트워크를 바탕으로 한 철강 및 K-Product 소싱 솔루션"
+                "title": "Trading Division (무역 사업부)",
+                "headline": "전문성과 네트워크를 바탕으로 한 글로벌 트레이딩 솔루션",
+                "items": [
+                    {
+                        "title": "Steel Business",
+                        "desc": "주요 철강사와의 강력한 파트너십을 바탕으로 한국 및 삼국간 고품질 철강제품 공급"
+                    },
+                    {
+                        "title": "K-Product Expansion",
+                        "desc": "철강 분야의 안목을 확장하여 대한민국의 경쟁력 있는 우수한 제품군을 세계 시장에 공급"
+                    },
+                    {
+                        "title": "Customized Sourcing",
+                        "desc": "특수 산업 수요에 대응하는 제품 포트폴리오 다각화 및 고객 맞춤형 구매(조달) 솔루션 제공"
+                    }
+                ]
             },
             "logistics": {
-                "title": "Logistics Division",
-                "desc": "30년 해상 운송 노하우 기반의 통합 물류 서비스 (Forwarding, Supply Chain)"
+                "title": "Logistics Division (물류 사업부)",
+                "headline": "30년 해상 운송 노하우 기반의 통합 물류 서비스",
+                "items": [
+                    {
+                        "title": "Global Forwarding",
+                        "desc": "풍부한 해상 운송 경험을 바탕으로 빠르고 정확한 글로벌 물류 네트워크 운영"
+                    },
+                    {
+                        "title": "Optimized Supply Chain",
+                        "desc": "속도와 효율을 극대화하여 복잡한 국제 물류 프로세스를 최적화한 맞춤형 운송 솔루션"
+                    },
+                    {
+                        "title": "Compliance & Safety",
+                        "desc": "국제 기준에 부합하는 철저한 컴플라이언스 관리로 안전하고 신뢰할 수 있는 물류 가치 창출"
+                    }
+                ]
             }
         },
         "values": {
-            "title": "Core Competencies",
+            "title": "Core & Competencies & Vision",
             "items": {
-                "partnership": "전략적 파트너십",
-                "quality": "품질 우선주의",
-                "diversification": "포트폴리오 다각화",
-                "expertise": "산업 전문성",
-                "global": "글로벌 네트워크"
+                "partnership": {
+                    "title": "전략적 파트너십",
+                    "desc": "장기적 가치를 창출하는 신뢰 기반의 협력 관계 구축"
+                },
+                "quality": {
+                    "title": "품질 우선주의",
+                    "desc": "국제 표준을 준수하는 철저한 품질 보증 및 검증 시스템"
+                },
+                "diversification": {
+                    "title": "포트폴리오 다각화",
+                    "desc": "철강을 넘어 특수 산업 및 한국산 우수 제품으로 사업 영역 확대"
+                },
+                "expertise": {
+                    "title": "솔루션 역량 고도화",
+                    "desc": "고객 맞춤형 지원 및 전문적인 프로세스 강화"
+                },
+                "customer": {
+                    "title": "고객 중심 경영",
+                    "desc": "고객의 성공을 최우선으로 하는 유연하고 선제적인 대응"
+                }
             }
         },
-        "vision": "Your Trusted Global Partner"
+        "vision": {
+            "title": "Your Trusted Global Partner",
+            "desc": "급변하는 글로벌 시장 환경 속에서도 NBB Networks는 검증된 산업 경험과 전문화된 역량을 바탕으로, 국제 트레이딩 및 물류 분야에서 가장 신뢰받는 글로벌 파트너로서 새로운 비즈니스 성과를 끊임없이 증명해 나가겠습니다."
+        }
     },
     "business": {
         "tabs": {
@@ -72,7 +119,6 @@
             },
             "steel": {
                 "title": "Steel Business",
-                "link_text": "제품 리스트 보기",
                 "items": [
                     "HRC / HRP (Hot Rolled Coil / Plate)",
                     "CR / GI / GL / ZAM / Pre-painted",
@@ -83,17 +129,18 @@
             },
             "kproduct": {
                 "title": "K-Product Expansion",
+                "page_desc": "한국의 우수한 제품을 세계 시장으로 확장합니다.",
                 "items": [
                     {
-                        "name": "Ginseng Products",
+                        "name": "인삼/홍삼 제품",
                         "desc": "대한민국 대표 건강식품 홍삼"
                     },
                     {
-                        "name": "Agricultural Products",
+                        "name": "농산물",
                         "desc": "설향 딸기 등 프리미엄 농산물"
                     },
                     {
-                        "name": "Used Cars",
+                        "name": "중고차",
                         "desc": "검증된 품질의 한국 중고차 수출"
                     }
                 ]
@@ -104,6 +151,15 @@
             "desc": "안전하고 신속한 운송, Cost 경쟁력을 갖춘 종합 물류 서비스",
             "intro": "안전하고 신속한 운송을 위한 고객 맞춤형 물류 Solution과 Cost 경쟁력을 갖춘 고품질의 종합물류 서비스를 제공합니다. 해상 운송, 항공 운송, 육상 운송, 복합 운송, 창고 및 통관에 이르기까지 물류 전 영역에서 최적의 서비스를 경험하세요.",
             "flow_title": "Logistics Process",
+            "process": {
+                "shipper": "화주 (Shipper)",
+                "inland": "내륙 운송",
+                "cfs": "CFS (보관/작업)",
+                "air": "항공 운송",
+                "ocean": "해상 운송",
+                "rail": "철도 운송",
+                "consignee": "수하인 (Consignee)"
+            },
             "table": {
                 "title": "Service Details",
                 "headers": [
@@ -146,7 +202,8 @@
             "asia": "아시아 (중국, 일본, 대만)",
             "sea": "동남아시아 (베트남, 태국, 필리핀, 인도네시아)",
             "me": "중동 (UAE, 카타르, 사우디아라비아, 터키)",
-            "americas": "미주 (미국, 캐나다, 멕시코, 칠레, 도미니카 공화국)",
+            "namerica": "북중미 (미국, 캐나다, 멕시코, 도미니카 공화국)",
+            "samerica": "남미 (칠레)",
             "europe": "유럽 (독일, 이탈리아, 네덜란드, 스페인, 포르투갈)",
             "others": "기타 (남아프리카 공화국, 인도)",
             "india": "인도",

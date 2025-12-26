@@ -33,26 +33,73 @@
             "desc_2": "We strategically combine rich industrial experience with solid business networks to drive sustainable growth. Through organic collaboration between our core Trading and Logistics divisions, we deliver differentiated execution that optimizes the entire business process for our clients beyond simple product supply."
         },
         "business": {
+            "title": "Business Division",
             "trading": {
                 "title": "Trading Division",
-                "desc": "Steel and K-Product sourcing solutions based on expertise and networks."
+                "headline": "Global trading solutions based on expertise and networks",
+                "items": [
+                    {
+                        "title": "Steel Business",
+                        "desc": "Supplying high-quality steel products between Korea and third countries based on strong partnerships with major steel companies"
+                    },
+                    {
+                        "title": "K-Product Expansion",
+                        "desc": "Expanding insight in the steel sector to supply Korea's competitive and excellent products to the global market"
+                    },
+                    {
+                        "title": "Customized Sourcing",
+                        "desc": "Diversifying product portfolios to meet special industrial demands and providing customized procurement solutions"
+                    }
+                ]
             },
             "logistics": {
                 "title": "Logistics Division",
-                "desc": "Integrated logistics services based on 30 years of maritime transport know-how."
+                "headline": "Integrated logistics services based on 30 years of maritime transport know-how",
+                "items": [
+                    {
+                        "title": "Global Forwarding",
+                        "desc": "Operating a fast and accurate global logistics network based on rich maritime transport experience"
+                    },
+                    {
+                        "title": "Optimized Supply Chain",
+                        "desc": "Customized transport solutions that maximize speed and efficiency to optimize complex international logistics processes"
+                    },
+                    {
+                        "title": "Compliance & Safety",
+                        "desc": "Creating safe and reliable logistics value through strict compliance management that meets international standards"
+                    }
+                ]
             }
         },
         "values": {
-            "title": "Core Competencies",
+            "title": "Core & Competencies & Vision",
             "items": {
-                "partnership": "Strategic Partnership",
-                "quality": "Quality First",
-                "diversification": "Diversified Portfolio",
-                "expertise": "Industry Expertise",
-                "global": "Global Network"
+                "partnership": {
+                    "title": "Strategic Partnership",
+                    "desc": "Building trust-based cooperative relationships that create long-term value"
+                },
+                "quality": {
+                    "title": "Quality First",
+                    "desc": "Thorough quality assurance and verification system complying with international standards"
+                },
+                "diversification": {
+                    "title": "Portfolio Diversification",
+                    "desc": "Expanding business areas beyond steel to special industries and excellent Korean products"
+                },
+                "expertise": {
+                    "title": "Advanced Solution Capability",
+                    "desc": "Strengthening customer-customized support and professional processes"
+                },
+                "customer": {
+                    "title": "Customer-Centric Management",
+                    "desc": "Flexible and proactive response prioritizing customer success"
+                }
             }
         },
-        "vision": "Your Trusted Global Partner"
+        "vision": {
+            "title": "Your Trusted Global Partner",
+            "desc": "Even in the rapidly changing global market environment, NBB Networks will continuously prove new business achievements as the most trusted global partner in international trading and logistics based on proven industrial experience and specialized capabilities."
+        }
     },
     "business": {
         "tabs": {
@@ -72,7 +119,6 @@
             },
             "steel": {
                 "title": "Steel Business",
-                "link_text": "View Product List",
                 "items": [
                     "HRC / HRP (Hot Rolled Coil / Plate)",
                     "CR / GI / GL / ZAM / Pre-painted",
@@ -83,6 +129,7 @@
             },
             "kproduct": {
                 "title": "K-Product Expansion",
+                "page_desc": "Expanding Korea's finest products to the global market.",
                 "items": [
                     {
                         "name": "Ginseng Products",
@@ -104,6 +151,15 @@
             "desc": "Integrated Logistics Services Built on 30 Years of Maritime Expertise. Providing customized shipping solutions for safe and fast transportation.",
             "intro": "We provide customized logistics solutions for safe and swift transportation, along with high-quality integrated logistics services equipped with cost competitiveness. Experience optimal services across all areas of logistics, including sea freight, air freight, inland transport, multimodal transport, warehousing, and customs clearance.",
             "flow_title": "Logistics Process",
+            "process": {
+                "shipper": "Shipper",
+                "inland": "Local Inland",
+                "cfs": "CFS",
+                "air": "Air Freight",
+                "ocean": "Ocean Freight",
+                "rail": "Rail Freight",
+                "consignee": "Consignee"
+            },
             "table": {
                 "title": "Service Details",
                 "headers": [
@@ -146,7 +202,8 @@
             "asia": "Asia (China, Japan, Taiwan)",
             "sea": "S.E. Asia (Vietnam, Thailand, Philippines, Indonesia)",
             "me": "Middle East (UAE, Qatar, Saudi Arabia, Turkey)",
-            "americas": "Americas (USA, Canada, Mexico, Chile, Dominican Republic)",
+            "namerica": "North America (USA, Canada, Mexico, Dominican Republic)",
+            "samerica": "South America (Chile)",
             "europe": "Europe (Germany, Italy, Netherlands, Spain, Portugal)",
             "others": "Others (South Africa, India)",
             "india": "India",

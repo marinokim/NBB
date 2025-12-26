@@ -8,11 +8,11 @@ const About = () => {
     const { t } = useTranslation();
 
     const values = [
-        { id: 'partnership', icon: <Handshake size={32} />, label: t('about.values.items.partnership') },
-        { id: 'quality', icon: <ShieldCheck size={32} />, label: t('about.values.items.quality') },
-        { id: 'diversification', icon: <PieChart size={32} />, label: t('about.values.items.diversification') },
-        { id: 'expertise', icon: <Briefcase size={32} />, label: t('about.values.items.expertise') },
-        { id: 'global', icon: <Globe size={32} />, label: t('about.values.items.global') },
+        { id: 'partnership', icon: <Handshake size={32} />, label: t('about.values.items.partnership.title'), desc: t('about.values.items.partnership.desc') },
+        { id: 'quality', icon: <ShieldCheck size={32} />, label: t('about.values.items.quality.title'), desc: t('about.values.items.quality.desc') },
+        { id: 'diversification', icon: <PieChart size={32} />, label: t('about.values.items.diversification.title'), desc: t('about.values.items.diversification.desc') },
+        { id: 'expertise', icon: <Briefcase size={32} />, label: t('about.values.items.expertise.title'), desc: t('about.values.items.expertise.desc') },
+        { id: 'customer', icon: <Globe size={32} />, label: t('about.values.items.customer.title'), desc: t('about.values.items.customer.desc') }, // Changed icon to Globe as placeholder
     ];
 
     return (
@@ -22,7 +22,7 @@ const About = () => {
                 <div className="container">
                     <h1>{t('about.title')}</h1>
                     <div className="about-content-grid">
-                        <div className="about-text-col">
+                        <div className="about-text-col fade-in-up">
                             <p className="about-headline">
                                 <Trans i18nKey="about.intro.headline" />
                             </p>
@@ -31,7 +31,7 @@ const About = () => {
                                 <p className="about-desc">{t('about.intro.desc_2')}</p>
                             </div>
                         </div>
-                        <div className="about-image-col">
+                        <div className="about-image-col fade-in-up delay-100">
                             <img src={AboutImage} alt="NBB Corporate" className="about-main-image" />
                         </div>
                     </div>
@@ -41,14 +41,31 @@ const About = () => {
             {/* Business Summary */}
             <section className="about-business">
                 <div className="container">
+                    <h2 className="heading-lg" style={{ textAlign: 'center', marginBottom: '60px' }}>{t('about.business.title')}</h2>
                     <div className="business-grid">
-                        <div className="business-card">
+                        {/* Trading */}
+                        <div className="business-card fade-in-up delay-200">
                             <h3>{t('about.business.trading.title')}</h3>
-                            <p>{t('about.business.trading.desc')}</p>
+                            <p className="business-headline">"{t('about.business.trading.headline')}"</p>
+                            <ul className="business-list">
+                                {(t('about.business.trading.items', { returnObjects: true }) || []).map((item, index) => (
+                                    <li key={index}>
+                                        <strong>{item.title}</strong> : {item.desc}
+                                    </li>
+                                ))}
+                            </ul>
                         </div>
-                        <div className="business-card">
+                        {/* Logistics */}
+                        <div className="business-card fade-in-up delay-300">
                             <h3>{t('about.business.logistics.title')}</h3>
-                            <p>{t('about.business.logistics.desc')}</p>
+                            <p className="business-headline">"{t('about.business.logistics.headline')}"</p>
+                            <ul className="business-list">
+                                {(t('about.business.logistics.items', { returnObjects: true }) || []).map((item, index) => (
+                                    <li key={index}>
+                                        <strong>{item.title}</strong> : {item.desc}
+                                    </li>
+                                ))}
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -59,12 +76,13 @@ const About = () => {
                 <div className="container">
                     <h2 className="heading-lg">{t('about.values.title')}</h2>
                     <div className="values-grid">
-                        {values.map((val) => (
-                            <div key={val.id} className="value-item">
+                        {values.map((val, index) => (
+                            <div key={val.id} className={`value-item fade-in-up delay-${(index + 2) * 100}`}>
                                 <div className="value-icon-wrapper">
                                     {val.icon}
                                 </div>
                                 <span className="value-text">{val.label}</span>
+                                <p className="value-desc">{val.desc}</p>
                             </div>
                         ))}
                     </div>
@@ -74,7 +92,8 @@ const About = () => {
             {/* Vision Banner */}
             <section className="about-vision">
                 <div className="container">
-                    <h2>{t('about.vision')}</h2>
+                    <h2>{t('about.vision.title')}</h2>
+                    <p className="vision-desc">{t('about.vision.desc')}</p>
                 </div>
             </section>
         </div>

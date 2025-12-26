@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Truck, Ship, Anchor, Package, Home, ArrowRight, Handshake, ShieldCheck } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { Truck, Ship, Package, ArrowRight, Handshake, ShieldCheck, Factory, Plane, Train } from 'lucide-react';
 import './Business.css';
 
 const Business = () => {
@@ -67,21 +68,21 @@ const Business = () => {
                                 <h3>{t('business.trading.steel.title')}</h3>
                                 <div className="steel-list-wrapper">
                                     <ul className="product-list">
-                                        {Array.isArray(steelItems) && steelItems.map((item, i) => (
+                                        {Array.isArray(steelItems) && steelItems.slice(0, 5).map((item, i) => (
                                             <li key={i}>{item}</li>
                                         ))}
                                     </ul>
                                 </div>
-                                <a href="http://www.st-inter.co.kr/inc_html/steel.html" target="_blank" rel="noopener noreferrer" className="text-link">
-                                    {t('business.trading.steel.link_text')} <ArrowRight size={16} />
-                                </a>
+                                <Link to="/business/steel" className="text-link">
+                                    {t('business.trading.view_details', 'View Details')} <ArrowRight size={16} />
+                                </Link>
                             </div>
 
                             {/* K-Product */}
                             <div className="product-category">
                                 <h3>{t('business.trading.kproduct.title')}</h3>
                                 <div className="k-product-grid">
-                                    {Array.isArray(kProducts) && kProducts.map((item, i) => (
+                                    {Array.isArray(kProducts) && kProducts.slice(0, 3).map((item, i) => (
                                         <div key={i} className="k-item">
                                             {/* Placeholder images for K-Products would go here */}
                                             <div className="k-item-content">
@@ -91,6 +92,9 @@ const Business = () => {
                                         </div>
                                     ))}
                                 </div>
+                                <Link to="/business/k-product" className="text-link">
+                                    {t('business.trading.view_details', 'View Details')} <ArrowRight size={16} />
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -110,34 +114,72 @@ const Business = () => {
                         </div>
 
                         {/* Animated Flow */}
+                        {/* Animated Flow - Redesigned */}
                         <div className="logistics-flow">
-                            <h3 style={{ marginBottom: '30px' }}>{t('business.logistics.flow_title')}</h3>
-                            <div className="flow-animation">
-                                <div className="flow-line"><div className="flow-line-fill"></div></div>
+                            <h3 style={{ marginBottom: '40px' }}>{t('business.logistics.flow_title')}</h3>
 
-                                <div className="flow-step">
-                                    <div className="flow-icon"><Home size={28} /></div>
-                                    <span>Shipper</span>
+                            <div className="process-diagram">
+                                {/* Step 1: Shipper */}
+                                <div className="p-step">
+                                    <div className="p-icon"><Factory size={28} /></div>
+                                    <span className="p-label">{t('business.logistics.process.shipper')}</span>
                                 </div>
-                                <div className="flow-step">
-                                    <div className="flow-icon"><Truck size={28} /></div>
-                                    <span>Local Inland</span>
+                                <div className="p-arrow"><ArrowRight size={20} /></div>
+
+                                {/* Step 2: Inland */}
+                                <div className="p-step">
+                                    <div className="p-icon"><Truck size={28} /></div>
+                                    <span className="p-label">{t('business.logistics.process.inland')}</span>
                                 </div>
-                                <div className="flow-step">
-                                    <div className="flow-icon"><Package size={28} /></div>
-                                    <span>CFS</span>
+                                <div className="p-arrow"><ArrowRight size={20} /></div>
+
+                                {/* Step 3: CFS */}
+                                <div className="p-step">
+                                    <div className="p-icon"><Package size={28} /></div>
+                                    <span className="p-label">{t('business.logistics.process.cfs')}</span>
                                 </div>
-                                <div className="flow-step">
-                                    <div className="flow-icon"><Ship size={28} /></div>
-                                    <span>Ocean / Air</span>
+
+                                {/* Branch Split */}
+                                <div className="p-branch-arrows">
+                                    <div className="p-arrow-up"></div>
+                                    <div className="p-arrow-mid"></div>
+                                    <div className="p-arrow-down"></div>
                                 </div>
-                                <div className="flow-step">
-                                    <div className="flow-icon"><Package size={28} /></div>
-                                    <span>CFS</span>
+
+                                {/* Middle Column: Air / Ocean / Rail */}
+                                <div className="p-middle-col">
+                                    <div className="p-mid-step">
+                                        <div className="p-icon plane"><Plane size={24} /></div>
+                                        <span className="p-label-sm">{t('business.logistics.process.air')}</span>
+                                    </div>
+                                    <div className="p-mid-step">
+                                        <div className="p-icon ship"><Ship size={24} /></div>
+                                        <span className="p-label-sm">{t('business.logistics.process.ocean')}</span>
+                                    </div>
+                                    <div className="p-mid-step">
+                                        <div className="p-icon train"><Train size={24} /></div>
+                                        <span className="p-label-sm">{t('business.logistics.process.rail')}</span>
+                                    </div>
                                 </div>
-                                <div className="flow-step">
-                                    <div className="flow-icon"><Home size={28} /></div>
-                                    <span>Consignee</span>
+
+                                {/* Branch Merge */}
+                                <div className="p-branch-arrows rotate-180">
+                                    <div className="p-arrow-up"></div>
+                                    <div className="p-arrow-mid"></div>
+                                    <div className="p-arrow-down"></div>
+                                </div>
+
+                                {/* Step 5: CFS */}
+                                <div className="p-step">
+                                    <div className="p-icon"><Package size={28} /></div>
+                                    <span className="p-label">{t('business.logistics.process.cfs')}</span>
+                                </div>
+                                <div className="p-arrow"><ArrowRight size={20} /></div>
+
+                                {/* Step 6: Consignee */}
+                                <div className="p-step">
+                                    <div className="p-icon success"><Handshake size={28} /></div>
+                                    <span className="p-label">{t('business.logistics.process.consignee')}</span>
                                 </div>
                             </div>
                         </div>

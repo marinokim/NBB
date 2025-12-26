@@ -37,17 +37,19 @@ import heung_a from '../assets/images/partners/logistics/heung_a.png';
 
 const Network = () => {
     const { t } = useTranslation();
+    const [activeRegion, setActiveRegion] = React.useState(null);
 
     // Coordinates are approximate % for the background map
+    // IDs are designed to match region keys for highlighting
     const dots = [
         { id: 'asia', top: '31%', left: '78%', label: t('network.regions.asia') }, // China/Japan
         { id: 'sea', top: '50%', left: '78%', label: t('network.regions.sea') }, // SE Asia
         { id: 'me', top: '40%', left: '60%', label: t('network.regions.me') }, // Middle East
         { id: 'europe', top: '25%', left: '50%', label: t('network.regions.europe') }, // Europe
-        { id: 'americas_n', top: '28%', left: '20%', label: t('network.regions.americas') }, // North America
-        { id: 'americas_s', top: '65%', left: '30%', label: t('network.regions.americas') }, // South America
-        { id: 'others_india', top: '42%', left: '68%', label: t('network.regions.india') }, // India - Specific Label
-        { id: 'others_sa', top: '70%', left: '53%', label: t('network.regions.sa') }, // South Africa - Specific Label
+        { id: 'namerica', top: '28%', left: '20%', label: t('network.regions.namerica') }, // North America
+        { id: 'samerica', top: '65%', left: '30%', label: t('network.regions.samerica') }, // South America
+        { id: 'others_india', top: '42%', left: '68%', label: t('network.regions.india') }, // India
+        { id: 'others_sa', top: '70%', left: '53%', label: t('network.regions.sa') }, // South Africa
     ];
 
     const tradingLogosList = [
@@ -87,6 +89,25 @@ const Network = () => {
         { name: "Heung-A", url: "http://www.heung-a.com", src: heung_a }
     ];
 
+    const regionKeys = [
+        'asia',
+        'sea',
+        'me',
+        'europe',
+        'namerica',
+        'samerica',
+        'others'
+    ];
+
+    const handleRegionClick = (key) => {
+        // If clicking the same region, toggle it off
+        if (activeRegion === key) {
+            setActiveRegion(null);
+        } else {
+            setActiveRegion(key);
+        }
+    };
+
     return (
         <div className="network-page">
             <div className="container">
@@ -116,30 +137,34 @@ const Network = () => {
                         <div className="map-tooltip">HQ (Seoul, Korea)</div>
                     </div>
 
-                    {dots.map((dot, i) => (
-                        <div
-                            key={i}
-                            className="map-dot"
-                            style={{ top: dot.top, left: dot.left }}
-                            title={dot.label} // Native tooltip fallback
-                        >
-                            <div className="map-tooltip">{dot.label}</div>
-                        </div>
-                    ))}
+                    {dots.map((dot, i) => {
+                        // Check if this dot belongs to the active region
+                        // The 'others' case matches 'others_india' and 'others_sa'
+                        // The 'americas' case matches 'americas_n' and 'americas_s'
+                        const isActive = activeRegion && dot.id.startsWith(activeRegion);
+
+                        return (
+                            <div
+                                key={i}
+                                className={`map-dot ${isActive ? 'active-region' : ''}`}
+                                style={{ top: dot.top, left: dot.left }}
+                                title={dot.label}
+                            >
+                                <div className="map-tooltip">{dot.label}</div>
+                            </div>
+                        );
+                    })}
                 </div>
 
                 <div className="region-list">
-                    {[
-                        'network.regions.asia',
-                        'network.regions.sea',
-                        'network.regions.me',
-                        'network.regions.europe',
-                        'network.regions.americas',
-                        'network.regions.others'
-                    ].map((key, i) => (
-                        <div key={i} className="region-item">
-                            {t(key)}
-                        </div>
+                    {regionKeys.map((key) => (
+                        <button
+                            key={key}
+                            className={`region-btn ${activeRegion === key ? 'active' : ''}`}
+                            onClick={() => handleRegionClick(key)}
+                        >
+                            {t(`network.regions.${key}`)}
+                        </button>
                     ))}
                 </div>
             </div>

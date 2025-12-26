@@ -274,57 +274,252 @@
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
-.flow-animation {
-    position: relative;
-    height: 140px;
-    /* Increased height */
+/* Redesigned Process Diagram */
+.process-diagram {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    max-width: 900px;
-    /* Increased width */
-    margin: 40px auto 0;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    /* Allow wrapping on small screens */
 }
 
-.flow-step {
+.p-step {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px;
+    width: 100px;
+    position: relative;
     z-index: 2;
-    background: #fff;
-    padding: 0 10px;
 }
 
-.flow-icon {
+.p-icon {
     width: 60px;
     height: 60px;
-    background: var(--color-primary);
-    color: white;
+    background: var(--color-white);
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
 }
 
-.flow-line {
-    position: absolute;
-    top: 30px;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background: #e1e1e1;
-    z-index: 1;
+.p-icon.success {
+    background: var(--color-primary);
+    color: white;
+    border: none;
 }
 
-.flow-line-fill {
+.p-step:hover .p-icon {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.p-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-text-dark);
+    text-align: center;
+}
+
+.p-arrow {
+    color: #cbd5e1;
+    display: flex;
+    align-items: center;
+}
+
+/* Middle Branching Section */
+.p-middle-col {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0 10px;
+}
+
+.p-mid-step {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.p-mid-step .p-icon {
+    width: 45px;
+    height: 45px;
+    border-color: var(--color-secondary);
+    color: var(--color-secondary);
+}
+
+.p-label-sm {
+    font-size: 13px;
+    color: #666;
+    font-weight: 500;
+    width: 80px;
+    /* Force label width for alignment */
+    display: none;
+    /* Hidden on mobile by default, shown on larger */
+}
+
+/* Branch Arrows (Visual Only) */
+.p-branch-arrows {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 180px;
+    /* Adjusted to match middle column height */
+    width: 40px;
+    position: relative;
+}
+
+.p-branch-arrows .p-arrow-up,
+.p-branch-arrows .p-arrow-down {
     position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background: var(--color-accent);
-    width: 0%;
-    animation: flowProgress 3s infinite linear;
+    width: 24px;
+    height: 3px;
+    /* Thicker for visibility */
+    background-color: #cbd5e1;
+    /* Fallback */
+    right: 0;
+    border-radius: 2px;
+}
+
+/* Gradients for flow animation */
+.p-branch-arrows .p-arrow-up,
+.p-branch-arrows .p-arrow-mid,
+.p-branch-arrows .p-arrow-down {
+    background: linear-gradient(90deg, #cbd5e1 30%, var(--color-primary) 50%, #cbd5e1 70%);
+    background-size: 200% 100%;
+    animation: dashFlow 1.5s infinite linear;
+}
+
+.p-branch-arrows .p-arrow-up {
+    top: 22px;
+    /* Center of top icon */
+    transform: rotate(-30deg);
+    transform-origin: right center;
+}
+
+.p-branch-arrows .p-arrow-down {
+    bottom: 22px;
+    /* Center of bottom icon */
+    transform: rotate(30deg);
+    transform-origin: right center;
+}
+
+.p-branch-arrows .p-arrow-mid {
+    position: absolute;
+    width: 24px;
+    height: 3px;
+    background-color: #cbd5e1;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.rotate-180 {
+    transform: rotate(180deg);
+}
+
+/* Animations for Logistics Flow */
+@keyframes pulseFlow {
+
+    0%,
+    100% {
+        opacity: 0.4;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+        color: var(--color-primary);
+    }
+}
+
+@keyframes dashFlow {
+    0% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: -100% 50%;
+    }
+}
+
+.p-arrow {
+    animation: pulseFlow 1.5s infinite ease-in-out;
+    color: #cbd5e1;
+    margin-bottom: 30px;
+    /* Offset label height to aligns with icon center */
+}
+
+.p-arrow:nth-of-type(2) {
+    animation-delay: 0s;
+}
+
+.p-arrow:nth-of-type(4) {
+    animation-delay: 0.3s;
+}
+
+/* Icon Pulse Sequence - Stronger */
+@keyframes stepPulse {
+
+    0%,
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
+        border-color: var(--color-primary);
+    }
+
+    50% {
+        box-shadow: 0 0 0 10px rgba(0, 123, 255, 0.1);
+        border-color: var(--color-accent);
+        transform: scale(1.05);
+    }
+}
+
+/* Sequential Highlight */
+.p-step:nth-child(1) .p-icon {
+    animation: stepPulse 2s infinite;
+    animation-delay: 0s;
+}
+
+.p-step:nth-child(3) .p-icon {
+    animation: stepPulse 2s infinite;
+    animation-delay: 0.4s;
+}
+
+.p-step:nth-child(5) .p-icon {
+    animation: stepPulse 2s infinite;
+    animation-delay: 0.8s;
+}
+
+.p-mid-step .p-icon {
+    animation: stepPulse 2s infinite;
+    animation-delay: 1.2s;
+}
+
+.p-step:nth-child(9) .p-icon {
+    animation: stepPulse 2s infinite;
+    animation-delay: 1.6s;
+}
+
+.p-step:nth-child(11) .p-icon {
+    animation: stepPulse 2s infinite;
+    animation-delay: 2.0s;
+}
+
+@media (min-width: 768px) {
+    .p-label-sm {
+        display: block;
+    }
+
+    .process-diagram {
+        flex-wrap: nowrap;
+    }
 }
 
 /* Services List */
@@ -365,22 +560,7 @@
     }
 }
 
-@keyframes flowProgress {
-    0% {
-        width: 0%;
-        left: 0;
-    }
 
-    50% {
-        width: 100%;
-        left: 0;
-    }
-
-    100% {
-        width: 0%;
-        left: 100%;
-    }
-}
 
 @media (min-width: 768px) {
     .trading-grid {
