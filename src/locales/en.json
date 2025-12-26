@@ -28,8 +28,9 @@
     "about": {
         "title": "About NBB Networks",
         "intro": {
-            "headline": "Connecting global value through the synergy of<br />30 years of industrial heritage, trading, and logistics.",
-            "desc": "Based on 30 years of accumulated industrial experience, NBB Networks combines expertise in steel trading and international logistics to provide optimal business solutions to our customers."
+            "headline": "Connecting Global Value through the Synergy of <br />30 Years of Industrial Heritage, Trading, and Logistics.",
+            "desc_1": "NBB Networks is a specialized international trading and logistics company established in 2017. Built on over 30 years of accumulated leadership and expertise in steel trading and maritime transport, we have established long-term business trust based on a strong global network and operational excellence.",
+            "desc_2": "We strategically combine rich industrial experience with solid business networks to drive sustainable growth. Through organic collaboration between our core Trading and Logistics divisions, we deliver differentiated execution that optimizes the entire business process for our clients beyond simple product supply."
         },
         "business": {
             "trading": {

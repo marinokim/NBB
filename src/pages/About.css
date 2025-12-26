@@ -2,31 +2,65 @@
     padding-top: var(--header-height);
 }
 
+/* Intro Section */
 .about-intro {
     padding: 80px 0;
     background-color: var(--color-bg-light);
-    text-align: center;
 }
 
 .about-intro h1 {
     font-size: 36px;
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: 60px;
     color: var(--color-primary);
+    text-align: center;
+}
+
+.about-content-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.about-text-col {
+    text-align: left;
 }
 
 .about-headline {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 700;
     line-height: 1.4;
-    margin-bottom: var(--spacing-md);
+    margin-bottom: 30px;
+    color: var(--color-text-dark);
+}
+
+.about-desc-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .about-desc {
-    max-width: 800px;
-    margin: 0 auto;
     font-size: 16px;
     color: var(--color-text-light);
     line-height: 1.8;
+}
+
+.about-image-col {
+    width: 100%;
+}
+
+.about-main-image {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 992px) {
+    .about-content-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+    }
 }
 
 /* Business Division - 2 Column */

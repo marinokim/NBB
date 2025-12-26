@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation, Trans } from 'react-i18next';
 import { Handshake, ShieldCheck, PieChart, Briefcase, Globe } from 'lucide-react';
+import AboutImage from '../assets/images/hero/hero_port_operations.png'; // Placeholder image
 import './About.css';
 
 const About = () => {
@@ -20,10 +21,20 @@ const About = () => {
             <section className="about-intro">
                 <div className="container">
                     <h1>{t('about.title')}</h1>
-                    <p className="about-headline">
-                        <Trans i18nKey="about.intro.headline" />
-                    </p>
-                    <p className="about-desc">{t('about.intro.desc')}</p>
+                    <div className="about-content-grid">
+                        <div className="about-text-col">
+                            <p className="about-headline">
+                                <Trans i18nKey="about.intro.headline" />
+                            </p>
+                            <div className="about-desc-wrapper">
+                                <p className="about-desc">{t('about.intro.desc_1')}</p>
+                                <p className="about-desc">{t('about.intro.desc_2')}</p>
+                            </div>
+                        </div>
+                        <div className="about-image-col">
+                            <img src={AboutImage} alt="NBB Corporate" className="about-main-image" />
+                        </div>
+                    </div>
                 </div>
             </section>
 
