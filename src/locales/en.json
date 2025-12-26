@@ -62,10 +62,19 @@
         "trading": {
             "title": "Trading Division",
             "desc": "Global Trading Solutions Driven by Expertise and Networks. Specializes in global commerce centered on steel products from Korea and third-country markets.",
+            "intro": {
+                "main": "Our Trading Division specializes in global commerce centered on steel products from Korea and third-country markets, delivering competitive solutions built on a foundation of trust and expertise. Leveraging decades of deep-rooted know-how in the steel industry, we are strategically expanding our global footprint by supplying Korea's most competitive and premium products to the world.",
+                "sub": "Beyond the mere movement of goods, we uphold the core values of 'Sustainable Partnership' and 'Strict Quality First,' striving for innovation and mutual growth as a valuable partner connecting global supply chains."
+            },
+            "philosophy": {
+                "partnership": "Sustainable Partnership",
+                "quality": "Strict Quality First"
+            },
             "steel": {
                 "title": "Steel Business",
+                "link_text": "View Product List",
                 "items": [
-                    "HRC / HRP",
+                    "HRC / HRP (Hot Rolled Coil / Plate)",
                     "CR / GI / GL / ZAM / Pre-painted",
                     "Aluminized Steel / Si Steel",
                     "STS (Stainless Steel)",
@@ -93,6 +102,7 @@
         "logistics": {
             "title": "Logistics Division",
             "desc": "Integrated Logistics Services Built on 30 Years of Maritime Expertise. Providing customized shipping solutions for safe and fast transportation.",
+            "intro": "We provide customized logistics solutions for safe and swift transportation, along with high-quality integrated logistics services equipped with cost competitiveness. Experience optimal services across all areas of logistics, including sea freight, air freight, inland transport, multimodal transport, warehousing, and customs clearance.",
             "flow_title": "Logistics Process",
             "table": {
                 "title": "Service Details",

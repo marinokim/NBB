@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Truck, Ship, Anchor, Package, Home, ArrowRight } from 'lucide-react';
+import { Truck, Ship, Anchor, Package, Home, ArrowRight, Handshake, ShieldCheck } from 'lucide-react';
 import './Business.css';
 
 const Business = () => {
@@ -8,7 +8,6 @@ const Business = () => {
     const [activeTab, setActiveTab] = useState('trading'); // 'trading' or 'logistics'
 
     const kProducts = t('business.trading.kproduct.items', { returnObjects: true });
-    const services = t('business.logistics.services.list', { returnObjects: true });
     const steelItems = t('business.trading.steel.items', { returnObjects: true });
 
     return (
@@ -39,18 +38,43 @@ const Business = () => {
                     <div className="trading-section fade-in">
                         <div className="section-header">
                             <h2>{t('business.trading.title')}</h2>
-                            <p>{t('business.trading.desc')}</p>
+                            {/* <p>{t('business.trading.desc')}</p> */}
+                        </div>
+
+                        {/* Intro Box */}
+                        <div className="trading-intro-box">
+                            <h3 className="intro-title">Global Trading & Logistics Partner</h3>
+                            <p className="intro-main">{t('business.trading.intro.main')}</p>
+                            <div className="intro-divider"></div>
+                            <p className="intro-sub">{t('business.trading.intro.sub')}</p>
+                        </div>
+
+                        {/* Philosophy Cards */}
+                        <div className="philosophy-grid">
+                            <div className="philosophy-card">
+                                <div className="ph-icon"><Handshake size={32} /></div>
+                                <h4>{t('business.trading.philosophy.partnership')}</h4>
+                            </div>
+                            <div className="philosophy-card">
+                                <div className="ph-icon"><ShieldCheck size={32} /></div>
+                                <h4>{t('business.trading.philosophy.quality')}</h4>
+                            </div>
                         </div>
 
                         <div className="trading-grid">
                             {/* Steel */}
                             <div className="product-category">
                                 <h3>{t('business.trading.steel.title')}</h3>
-                                <ul className="product-list">
-                                    {Array.isArray(steelItems) && steelItems.map((item, i) => (
-                                        <li key={i}>{item}</li>
-                                    ))}
-                                </ul>
+                                <div className="steel-list-wrapper">
+                                    <ul className="product-list">
+                                        {Array.isArray(steelItems) && steelItems.map((item, i) => (
+                                            <li key={i}>{item}</li>
+                                        ))}
+                                    </ul>
+                                </div>
+                                <a href="http://www.st-inter.co.kr/inc_html/steel.html" target="_blank" rel="noopener noreferrer" className="text-link">
+                                    {t('business.trading.steel.link_text')} <ArrowRight size={16} />
+                                </a>
                             </div>
 
                             {/* K-Product */}
@@ -59,8 +83,11 @@ const Business = () => {
                                 <div className="k-product-grid">
                                     {Array.isArray(kProducts) && kProducts.map((item, i) => (
                                         <div key={i} className="k-item">
-                                            <h4>{item.name}</h4>
-                                            <p>{item.desc}</p>
+                                            {/* Placeholder images for K-Products would go here */}
+                                            <div className="k-item-content">
+                                                <h4>{item.name}</h4>
+                                                <p>{item.desc}</p>
+                                            </div>
                                         </div>
                                     ))}
                                 </div>
@@ -74,34 +101,43 @@ const Business = () => {
                     <div className="logistics-section fade-in">
                         <div className="section-header">
                             <h2>{t('business.logistics.title')}</h2>
-                            <p>{t('business.logistics.desc')}</p>
+                            {/* <p>{t('business.logistics.desc')}</p> */}
+                        </div>
+
+                        {/* Logistics Intro */}
+                        <div className="logistics-intro-box">
+                            <p>{t('business.logistics.intro')}</p>
                         </div>
 
                         {/* Animated Flow */}
                         <div className="logistics-flow">
-                            <h3 style={{ marginBottom: '20px' }}>{t('business.logistics.flow_title')}</h3>
+                            <h3 style={{ marginBottom: '30px' }}>{t('business.logistics.flow_title')}</h3>
                             <div className="flow-animation">
                                 <div className="flow-line"><div className="flow-line-fill"></div></div>
 
                                 <div className="flow-step">
-                                    <div className="flow-icon"><Home size={24} /></div>
+                                    <div className="flow-icon"><Home size={28} /></div>
                                     <span>Shipper</span>
                                 </div>
                                 <div className="flow-step">
-                                    <div className="flow-icon"><Truck size={24} /></div>
-                                    <span>Inland</span>
+                                    <div className="flow-icon"><Truck size={28} /></div>
+                                    <span>Local Inland</span>
                                 </div>
                                 <div className="flow-step">
-                                    <div className="flow-icon"><Ship size={24} /></div>
-                                    <span>Ocean/Air</span>
+                                    <div className="flow-icon"><Package size={28} /></div>
+                                    <span>CFS</span>
                                 </div>
                                 <div className="flow-step">
-                                    <div className="flow-icon"><Anchor size={24} /></div>
-                                    <span>Port</span>
+                                    <div className="flow-icon"><Ship size={28} /></div>
+                                    <span>Ocean / Air</span>
                                 </div>
                                 <div className="flow-step">
-                                    <div className="flow-icon"><Package size={24} /></div>
-                                    <span>Destination</span>
+                                    <div className="flow-icon"><Package size={28} /></div>
+                                    <span>CFS</span>
+                                </div>
+                                <div className="flow-step">
+                                    <div className="flow-icon"><Home size={28} /></div>
+                                    <span>Consignee</span>
                                 </div>
                             </div>
                         </div>

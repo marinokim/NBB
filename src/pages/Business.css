@@ -120,23 +120,169 @@
     color: #777;
 }
 
+/* Intro Box */
+.trading-intro-box {
+    text-align: center;
+    margin-bottom: 60px;
+    padding: 0 20px;
+}
+
+.intro-title {
+    font-size: 24px;
+    color: var(--color-primary);
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.intro-main {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.intro-divider {
+    width: 60px;
+    height: 3px;
+    background: var(--color-accent);
+    margin: 0 auto 30px;
+}
+
+.intro-sub {
+    font-size: 16px;
+    color: var(--color-text-light);
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Philosophy Cards */
+.philosophy-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.philosophy-card {
+    background: var(--color-white);
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 123, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.philosophy-card:hover {
+    transform: translateY(-5px);
+}
+
+.ph-icon {
+    width: 60px;
+    height: 60px;
+    background: #eef6ff;
+    color: var(--color-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.philosophy-card h4 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+@media (min-width: 768px) {
+    .philosophy-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Trading Grid */
+.trading-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
+
+.product-category {
+    background: var(--color-white);
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    height: 100%;
+}
+
+.text-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--color-primary);
+    font-weight: 600;
+    margin-top: 20px;
+    text-decoration: none;
+    transition: gap 0.2s ease;
+}
+
+.text-link:hover {
+    gap: 12px;
+}
+
+.product-list {
+    list-style: none;
+    /* Removed disc */
+    padding-left: 0;
+}
+
+.product-list li {
+    padding: 12px 0;
+    font-size: 16px;
+    color: #555;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.product-list li:last-child {
+    border-bottom: none;
+}
+
+/* Logistics Section */
+.logistics-intro-box {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--color-text-dark);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Logistics Flow */
 .logistics-flow {
     background: var(--color-white);
-    padding: 40px;
+    padding: 60px 40px;
+    /* Increased padding */
     border-radius: 12px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     text-align: center;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
 .flow-animation {
     position: relative;
-    height: 120px;
+    height: 140px;
+    /* Increased height */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 800px;
+    max-width: 900px;
+    /* Increased width */
     margin: 40px auto 0;
 }
 
